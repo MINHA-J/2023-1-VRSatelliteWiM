@@ -4,8 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - RoomLight
-  - SamplesInfoPanel
+  - BaseHand
+  - ExtraCamera
   layers:
   - Default
   - TransparentFX
@@ -13,14 +13,14 @@ TagManager:
   - 
   - Water
   - UI
+  - 
+  - 
   - SceneObjects
   - Spheres
+  - 
+  - 
   - InteractionNoContactLayer
   - ContactBoneLayer
-  - 
-  - 
-  - 
-  - 
   - 
   - 
   - 

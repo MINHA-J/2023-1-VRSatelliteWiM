@@ -10,8 +10,9 @@ using Leap.Unity;
 using UnityEditor;
 
 [RequireComponent(typeof(Manipulation))]
-public class ProxyNode : WarpNode, IPinchable {
-    public enum ProxyState 
+public class ProxyNode : WarpNode, IPinchable
+{
+    public enum ProxyState
     {
         Normal,
         Pinched,
@@ -23,7 +24,9 @@ public class ProxyNode : WarpNode, IPinchable {
     public event EventHandler<ProxyEvent> OnProxyEvent;
 
     private static List<ProxyNode> instances = new List<ProxyNode>();
-    public static IEnumerable<ProxyNode> Instances {
+
+    public static IEnumerable<ProxyNode> Instances
+    {
         get => instances;
     }
 
@@ -46,15 +49,19 @@ public class ProxyNode : WarpNode, IPinchable {
 
     // Distance to drag to activate menu
     private const float menuActivateThreshold = 0.15f;
+
     // Offset from the direction of dragging
     private const float menuLocationOffset = 0.1f;
 
-    void Awake() {
+    void Awake()
+    {
         State = ProxyState.Normal;
         ProxyScaleFactor = 1f;
-        if(!UseEditorColor) {
+        if (!UseEditorColor)
+        {
             Color = WarpColorPalette.GetColor();
         }
+
         sphere = GetComponentInChildren<ProxySphere>();
         sphere.Color = Color;
         vfxGraph = GetComponentInChildren<VisualEffect>();
@@ -68,63 +75,88 @@ public class ProxyNode : WarpNode, IPinchable {
         instances.Add(this);
     }
 
-    private void OnDestroy() {
+    private void OnDestroy()
+    {
         PinchTracker.DeregisterPinchable(this);
         instances.Remove(this);
     }
 
-    public void SetCreationMode(bool isBeingCreated) {
-        if(isBeingCreated) {
+    public void SetCreationMode(bool isBeingCreated)
+    {
+        if (isBeingCreated)
+        {
             manipulation.enabled = false;
             sphere.ChangeHandOpening(0f, 0.5f);
 
-        } else {
+        }
+        else
+        {
             manipulation.enabled = true;
             sphere.ChangeHandOpening(1f, 0.5f);
         }
     }
 
-    private void OnManipulationModeChange(ManipulationMode from, ManipulationMode to) {
-        if(to == ManipulationMode.Activating) {
+    private void OnManipulationModeChange(ManipulationMode from, ManipulationMode to)
+    {
+        if (to == ManipulationMode.Activating)
+        {
             sphere.BeginInteractionTimerAnimation(Manipulation.ManipulationActivationTimeout);
         }
-        if(from == ManipulationMode.Activating && to == ManipulationMode.Active) {
+
+        if (from == ManipulationMode.Activating && to == ManipulationMode.Active)
+        {
             OnProxyEvent?.Invoke(this, ProxyEvent.StartManipulation);
             sphere.EndInteractionTimerAnimation(true);
-        } else if(from == ManipulationMode.Activating) {
+        }
+        else if (from == ManipulationMode.Activating)
+        {
             sphere.EndInteractionTimerAnimation(false);
             sphere.ChangeHandOpening(1f, 0.5f);
         }
-        if(from == ManipulationMode.Active && (to == ManipulationMode.Hover || to == ManipulationMode.Inactive )) {
+
+        if (from == ManipulationMode.Active && (to == ManipulationMode.Hover || to == ManipulationMode.Inactive))
+        {
             OnProxyEvent?.Invoke(this, ProxyEvent.EndManipulation);
             sphere.ChangeHandOpening(1f, 0.5f);
             sphere.ChangeSolidness(0.0f, 0.5f);
         }
-        if(to == ManipulationMode.Translating) {
+
+        if (to == ManipulationMode.Translating)
+        {
             OnProxyEvent?.Invoke(this, ProxyEvent.StartMoving);
         }
-        if(from == ManipulationMode.Translating) {
+
+        if (from == ManipulationMode.Translating)
+        {
             OnProxyEvent?.Invoke(this, ProxyEvent.EndMoving);
         }
-        if(to == ManipulationMode.ScalingAndRotating) {
+
+        if (to == ManipulationMode.ScalingAndRotating)
+        {
             originalSize = transform.localScale.x;
             State = ProxyState.Changing;
             OnProxyEvent?.Invoke(this, ProxyEvent.StartScalingAndRotating);
         }
-        if(from == ManipulationMode.ScalingAndRotating) {
+
+        if (from == ManipulationMode.ScalingAndRotating)
+        {
             OnProxyEvent?.Invoke(this, ProxyEvent.EndScalingAndRotating);
         }
     }
 
-    new void Update() {
+    new void Update()
+    {
         base.Update();
 
         HandleHeadEnter();
 
-        foreach(var mark in Marks) {
-            if(mark == null) {
+        foreach (var mark in Marks)
+        {
+            if (mark == null)
+            {
                 continue;
             }
+
             vfxGraph.SetVector3("EndPos", mark.transform.position);
             vfxGraph.SetFloat("EndRadius", mark.Radius);
             mark.Color = Color;
@@ -136,7 +168,9 @@ public class ProxyNode : WarpNode, IPinchable {
     }
 
     #region Functions dealing with pinching on the proxy for crossing menu
-    public void CheckPinchStart(InteractionHand hand, out bool isValid, out float distance) {
+
+    public void CheckPinchStart(InteractionHand hand, out bool isValid, out float distance)
+    {
         var pos = hand.leapHand.GetPinchPosition();
         distance = (pos - transform.position).magnitude - Radius;
         // is the hand within 5cm of the proxy surface?
@@ -146,7 +180,8 @@ public class ProxyNode : WarpNode, IPinchable {
         isValid &= ((allowedToPinch & manipulation.Mode) == manipulation.Mode);
     }
 
-    public void BeginPinch(InteractionHand hand) {
+    public void BeginPinch(InteractionHand hand)
+    {
         var pos = hand.leapHand.GetPinchPosition();
         pinchStart = pos;
         State = ProxyState.Pinched;
@@ -154,14 +189,17 @@ public class ProxyNode : WarpNode, IPinchable {
         sphere.ChangeHandOpening(0f, 0.1f);
     }
 
-    public void UpdatePinch(InteractionHand hand) {
+    public void UpdatePinch(InteractionHand hand)
+    {
         var pos = hand.leapHand.GetPinchPosition();
         sphere.PinchPosition = pos;
 
-        if(proxyMenu == null) {
+        if (proxyMenu == null)
+        {
             var pinchDirection = pos - pinchStart;
             var pinchDistance = pinchDirection.magnitude;
-            if(pinchDistance > menuActivateThreshold) {
+            if (pinchDistance > menuActivateThreshold)
+            {
                 var menuPosition = pos + pinchDirection.normalized * menuLocationOffset;
                 var menuOrientation = Quaternion.LookRotation(pinchDirection);
                 proxyMenu = Instantiate<CrossingMenu>(ProxyMenuPrefab, menuPosition, menuOrientation);
@@ -170,9 +208,12 @@ public class ProxyNode : WarpNode, IPinchable {
         }
     }
 
-    public void EndPinch(InteractionHand hand) {
-        if(proxyMenu != null) {
-            switch (proxyMenu.SelectedItem) {
+    public void EndPinch(InteractionHand hand)
+    {
+        if (proxyMenu != null)
+        {
+            switch (proxyMenu.SelectedItem)
+            {
                 case "Clone":
                     Vector3 offset = Player.Instance.MainCamera.transform.forward * transform.localScale.x * 0.5f;
                     Clone(sphere.PinchPosition + offset);
@@ -197,28 +238,35 @@ public class ProxyNode : WarpNode, IPinchable {
                     AlignWith(GetNodeAtPosition(sphere.PinchPosition));
                     break;
             }
+
             proxyMenu.Close();
             proxyMenu = null;
         }
+
         sphere.PinchPosition = Vector3.zero;
         State = ProxyState.Normal;
         sphere.ChangeHandOpening(1f, 0.1f);
     }
 
-    public void SetProxyMenu(CrossingMenu menu) {
+    public void SetProxyMenu(CrossingMenu menu)
+    {
         proxyMenu = menu;
     }
+
     #endregion
 
     #region Functions for minimizing a proxy
+
     [ContextMenu("Minimize")]
-    public void Minimize() {
+    public void Minimize()
+    {
         //originalSize = transform.localScale.x;
         OnProxyEvent?.Invoke(this, ProxyEvent.Minimized);
         StartCoroutine(MinimizeCoroutine());
     }
 
-    private IEnumerator MinimizeCoroutine() {
+    private IEnumerator MinimizeCoroutine()
+    {
         transform.DOScale(0.0f, 0.5f);
         Tween myTween = transform.DOJump(Player.Instance.InteractionHandLeft.position, 0.2f, 1, 0.5f);
         yield return myTween.WaitForCompletion();
@@ -231,15 +279,17 @@ public class ProxyNode : WarpNode, IPinchable {
     }
 
     [ContextMenu("Maximize")]
-    public void Maximize() {
+    public void Maximize()
+    {
         OnProxyEvent?.Invoke(this, ProxyEvent.Maximized);
         StartCoroutine(MaximizeCoroutine());
     }
 
-    private IEnumerator MaximizeCoroutine() {
+    private IEnumerator MaximizeCoroutine()
+    {
         Player.Instance.ProxyStorage.Remove(this);
         Vector3 endLocation = Player.Instance.InteractionHandLeft.position +
-            Player.Instance.MainCamera.transform.forward * originalSize * 0.7f;
+                              Player.Instance.MainCamera.transform.forward * originalSize * 0.7f;
         //endLocation.y = 1.2f;
         Tween myTween = transform.DOJump(endLocation, 0.2f, 1, 0.5f);
         transform.DOScale(originalSize, 0.15f);
@@ -251,71 +301,94 @@ public class ProxyNode : WarpNode, IPinchable {
         State = ProxyState.Normal;
         OnProxyEvent?.Invoke(this, ProxyEvent.Maximized);
     }
+
     #endregion
 
     #region Functions for heads poking in and out of a proxy
-    private void HandleHeadEnter() {
+
+    private void HandleHeadEnter()
+    {
         // Distance of the head to the center of the proxy
         float headToProxyDistance = (transform.position - Camera.main.transform.position).magnitude;
         // Distance to scale function
         float smoothStep = CoolMath.SmoothStep(1f, 0.2f, headToProxyDistance / (transform.localScale.x / 2));
         ProxyScaleFactor = 1 + smoothStep * 10;
 
-        foreach (var mark in Marks) {
-            if(smoothStep > 0.75f) {
-                if(!HeadEntered) {
+        foreach (var mark in Marks)
+        {
+            if (smoothStep > 0.75f)
+            {
+                if (!HeadEntered)
+                {
                     HeadEnter();
                 }
-            } else {
-                if(HeadEntered) {
+            }
+            else
+            {
+                if (HeadEntered)
+                {
                     HeadExit();
                 }
             }
         }
     }
 
-    private void HeadEnter() {
+    private void HeadEnter()
+    {
         HeadEntered = true;
         OnProxyEvent?.Invoke(this, ProxyEvent.HeadEntered);
         Player.Instance.EnableTeleportCamera(this, Marks[0]);
     }
 
-    private void HeadExit() {
+    private void HeadExit()
+    {
         HeadEntered = false;
         OnProxyEvent?.Invoke(this, ProxyEvent.HeadExited);
         Player.Instance.DisableTeleportCamera();
     }
+
     #endregion
 
     #region Functions for anchoring and detaching a proxy
-    public override void AnchorToPlayer(GameObject o) {
+
+    public override void AnchorToPlayer(GameObject o)
+    {
         base.AnchorToPlayer(o);
         OnProxyEvent?.Invoke(this, ProxyEvent.AnchoredProxy);
     }
 
-    public override void Anchor(GameObject o) {
+    public override void Anchor(GameObject o)
+    {
         base.Anchor(o);
         OnProxyEvent?.Invoke(this, ProxyEvent.AnchoredProxy);
     }
 
-    public override void Detach() {
+    public override void Detach()
+    {
         base.Detach();
         OnProxyEvent?.Invoke(this, ProxyEvent.AnchoredProxy);
     }
+
     #endregion
 
     [ContextMenu("Change size")]
-    public void ChangeSize() {
-        if(State == ProxyState.Normal) {
+    public void ChangeSize()
+    {
+        if (State == ProxyState.Normal)
+        {
             Minimize();
-        } else if(State == ProxyState.Minimized) {
+        }
+        else if (State == ProxyState.Minimized)
+        {
             Maximize();
         }
     }
 
     [ContextMenu("Align to world")]
-    public void AlignToWorld() {
-        if(Marks.Count == 0) {
+    public void AlignToWorld()
+    {
+        if (Marks.Count == 0)
+        {
             return;
         }
 
@@ -328,8 +401,10 @@ public class ProxyNode : WarpNode, IPinchable {
     }
 
     [ContextMenu("Align within")]
-    public void AlignWithin() {
-        if(Marks.Count < 2) {
+    public void AlignWithin()
+    {
+        if (Marks.Count < 2)
+        {
             return;
         }
 
@@ -342,8 +417,10 @@ public class ProxyNode : WarpNode, IPinchable {
     }
 
     // TODO: only works for small misalignment right now, not when things are off 90� or so
-    public void AlignWith(ProxyNode other) {
-        if(Marks.Count == 0 || other.Marks.Count == 0) {
+    public void AlignWith(ProxyNode other)
+    {
+        if (Marks.Count == 0 || other.Marks.Count == 0)
+        {
             return;
         }
 
@@ -357,8 +434,10 @@ public class ProxyNode : WarpNode, IPinchable {
         transform.DORotateQuaternion(rot, 0.3f);
     }
 
-    public void ConvenienceAlign(ProxyNode other) {
-        if(Marks.Count == 0 || other.Marks.Count == 0) {
+    public void ConvenienceAlign(ProxyNode other)
+    {
+        if (Marks.Count == 0 || other.Marks.Count == 0)
+        {
             return;
         }
 
@@ -367,7 +446,8 @@ public class ProxyNode : WarpNode, IPinchable {
 
         var forwardA = AlignmentQuery.GetPreferredOrientation(markA.transform.position, markA.Radius);
         var forwardB = AlignmentQuery.GetPreferredOrientation(markB.transform.position, markB.Radius);
-        if(forwardA == Vector3.zero || forwardB == Vector3.zero) {
+        if (forwardA == Vector3.zero || forwardB == Vector3.zero)
+        {
             return;
         }
 
@@ -380,8 +460,9 @@ public class ProxyNode : WarpNode, IPinchable {
         transform.DORotateQuaternion(rotA, 0.3f);
         other.transform.DORotateQuaternion(rotB, 0.3f);
     }
-    
-    public void Clone(Vector3 pos) {
+
+    public void Clone(Vector3 pos)
+    {
         GameObject newProxy = Instantiate(Resources.Load<GameObject>("Prefabs/ProxyNode"));
         newProxy.GetComponent<ProxyNode>().Marks = Marks;
         newProxy.transform.localRotation = transform.localRotation;
@@ -390,29 +471,37 @@ public class ProxyNode : WarpNode, IPinchable {
     }
 
     [ContextMenu("Clone proxy")]
-    public void Clone() {
+    public void Clone()
+    {
         Clone(transform.position + Vector3.right * Radius * 3);
     }
 
-    public void Merge(ProxyNode other) {
+    public void Merge(ProxyNode other)
+    {
         var sequence = DOTween.Sequence();
         sequence.Append(transform.DOMove(transform.position, 0.3f).SetEase(Ease.InBack));
         sequence.Insert(0f, transform.DOScale(Radius * 2, 0.3f).SetEase(Ease.InExpo));
         sequence.Insert(0f, transform.DORotateQuaternion(transform.rotation, 0.3f));
         sequence.Append(other.transform.DOPunchScale(new Vector3(0.4f, 0.4f, 0.4f), 0.1f));
-        sequence.InsertCallback(0.3f, () => {
-            foreach(var mark in Marks) {
-                if(!other.Marks.Contains(mark)) {
+        sequence.InsertCallback(0.3f, () =>
+        {
+            foreach (var mark in Marks)
+            {
+                if (!other.Marks.Contains(mark))
+                {
                     other.Marks.Add(mark);
                 }
             }
+
             Destroy(gameObject);
         });
     }
 
     [ContextMenu("Split")]
-    public void Split(Vector3 splitDir) {
-        if(Marks.Count < 2) {
+    public void Split(Vector3 splitDir)
+    {
+        if (Marks.Count < 2)
+        {
             return;
         }
 
@@ -421,7 +510,8 @@ public class ProxyNode : WarpNode, IPinchable {
         //Debug.Log(splitDir);
         //Debug.Log(splitDir.magnitude);
 
-        for(int i = 0; i < Marks.Count; ++i) {
+        for (int i = 0; i < Marks.Count; ++i)
+        {
             var newProxy = Instantiate(Resources.Load<GameObject>("Prefabs/ProxyNode"));
             var newProxyMarks = newProxy.GetComponent<ProxyNode>().Marks;
             //newProxyMarks.Clear();
@@ -433,49 +523,63 @@ public class ProxyNode : WarpNode, IPinchable {
             newProxy.transform.DOMove(newProxyLoc, 0.2f).SetEase(Ease.OutBack);
         }
 
-        transform.DOScale(0f, 0.1f).SetEase(Ease.InBack).OnComplete(() => {
-            Destroy(gameObject);
-        });
+        transform.DOScale(0f, 0.1f).SetEase(Ease.InBack).OnComplete(() => { Destroy(gameObject); });
     }
 
-    public void HighlightQuery(ProxyNode other) {
+    public void HighlightQuery(ProxyNode other)
+    {
         HashSet<string> querySet = new HashSet<string>();
-        foreach(var mark in Marks) {
-            if(mark?.enabled == true) {
-                foreach(var obj in mark.ContainedItems()) {
+        foreach (var mark in Marks)
+        {
+            if (mark?.enabled == true)
+            {
+                foreach (var obj in mark.ContainedItems())
+                {
                     querySet.Add(obj.GetComponent<HighlightData>().ID);
                 }
             }
         }
 
-        if(querySet.Count == 0) {
+        if (querySet.Count == 0)
+        {
             return;
         }
 
         var query = querySet.ToList();
-        foreach(var mark in other.Marks) {
+        foreach (var mark in other.Marks)
+        {
             mark?.Highlight(query);
         }
     }
 
     // TODO: do we want these particles?
     private bool active = false;
+
     [ContextMenu("Particles")]
-    public void Test() {
-        if(active) {
+    public void Test()
+    {
+        if (active)
+        {
             vfxGraph.Stop();
-        } else {
+        }
+        else
+        {
             vfxGraph.Play();
         }
+
         active = !active;
     }
 
-    static ProxyNode GetNodeAtPosition(Vector3 pos) {
-        foreach (var n in instances) {
-            if (n.DistanceTo(pos) < n.Radius) {
+    static ProxyNode GetNodeAtPosition(Vector3 pos)
+    {
+        foreach (var n in instances)
+        {
+            if (n.DistanceTo(pos) < n.Radius)
+            {
                 return n;
             }
         }
+
         return null;
     }
 }
