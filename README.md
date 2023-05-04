@@ -1,2 +1,2 @@
-# 2023-1-VRSateliteWiM
+# 2023-1-VRSatelliteWiM
  [23-1] SWCON CAPSTONE DESIGN
