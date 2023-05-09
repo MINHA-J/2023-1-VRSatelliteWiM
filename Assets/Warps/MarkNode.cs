@@ -20,7 +20,7 @@ public class MarkNode : WarpNode {
     private Material sphereMaterial;
 
     private Transform debugSphere;
-    //public GameObject HighlightPrefab;    FIX
+    public GameObject HighlightPrefab; 
 
     void Start() {
         State = MarkState.Normal;
@@ -61,10 +61,10 @@ public class MarkNode : WarpNode {
             }
 
             var size = renderer.bounds.extents.Average() * 1.5f;
-            // FIX
-            // var highlight = Instantiate(HighlightPrefab, renderer.bounds.center, Quaternion.identity);
-            // highlight.transform.localScale = new Vector3(size, size, size);
-            // highlight.name = obj.name + " highlight";
+        
+            var highlight = Instantiate(HighlightPrefab, renderer.bounds.center, Quaternion.identity);
+            highlight.transform.localScale = new Vector3(size, size, size);
+            highlight.name = obj.name + " highlight";
         }
     }
 

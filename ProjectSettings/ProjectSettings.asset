@@ -156,7 +156,7 @@ PlayerSettings:
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
     Android: com.JMH.VRSateliteWiM
-    Standalone: com.UnityTechnologies.com.unity.template.urp-blank
+    Standalone: com.JMH.VRSateliteWiM
     iPhone: com.Unity-Technologies.com.unity.template.urp-blank
   buildNumber:
     Standalone: 0
