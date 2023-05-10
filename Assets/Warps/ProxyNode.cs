@@ -267,13 +267,16 @@ public class ProxyNode : WarpNode, IPinchable
 
     private IEnumerator MinimizeCoroutine()
     {
+        Debug.Log("[DEBUG] 1. Minimize this Proxy!");
         transform.DOScale(0.0f, 0.5f);
         Tween myTween = transform.DOJump(Player.Instance.InteractionHandLeft.position, 0.2f, 1, 0.5f);
         yield return myTween.WaitForCompletion();
+        
         // Finished minimizing
         sphere.ChangeSolidness(1f, 0.15f);
         sphere.ChangeHandOpening(0f, 0.15f);
         State = ProxyState.Minimized;
+        Debug.Log("[DEBUG] 1-1. Minimized State");
         Player.Instance.ProxyStorage.Add(this);
         OnProxyEvent?.Invoke(this, ProxyEvent.Minimized);
     }
@@ -287,19 +290,24 @@ public class ProxyNode : WarpNode, IPinchable
 
     private IEnumerator MaximizeCoroutine()
     {
-        Player.Instance.ProxyStorage.Remove(this);
-        Vector3 endLocation = Player.Instance.InteractionHandLeft.position +
-                              Player.Instance.MainCamera.transform.forward * originalSize * 0.7f;
-        //endLocation.y = 1.2f;
-        Tween myTween = transform.DOJump(endLocation, 0.2f, 1, 0.5f);
-        transform.DOScale(originalSize, 0.15f);
-        yield return myTween.WaitForCompletion();
-        // Finished maximizing
-        transform.localRotation = Quaternion.identity;
-        sphere.ChangeSolidness(0f, 0.15f);
-        sphere.ChangeHandOpening(1f, 0.15f);
-        State = ProxyState.Normal;
-        OnProxyEvent?.Invoke(this, ProxyEvent.Maximized);
+        //* FIX
+        if (Player.Instance.ProxyStorage.IsProxiesInStorage(this))
+        {
+            Debug.Log("[DEBUG] Maximize this Proxy!");
+            Player.Instance.ProxyStorage.Remove(this);
+            Vector3 endLocation = Player.Instance.InteractionHandLeft.position +
+                                  Player.Instance.MainCamera.transform.forward * originalSize * 0.7f;
+            //endLocation.y = 1.2f;
+            Tween myTween = transform.DOJump(endLocation, 0.2f, 1, 0.5f);
+            transform.DOScale(originalSize, 0.15f);
+            yield return myTween.WaitForCompletion();
+            // Finished maximizing
+            transform.localRotation = Quaternion.identity;
+            sphere.ChangeSolidness(0f, 0.15f);
+            sphere.ChangeHandOpening(1f, 0.15f);
+            State = ProxyState.Normal;
+            OnProxyEvent?.Invoke(this, ProxyEvent.Maximized);
+        }
     }
 
     #endregion

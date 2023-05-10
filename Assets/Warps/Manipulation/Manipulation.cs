@@ -100,7 +100,9 @@ public class Manipulation : MonoBehaviour {
     }
 
     private void CheckWhetherHandsAreInside() {
-        if(leap.hoveringControllers.Any(c => proxyNode.Contains(c.position))) {
+        if(leap.hoveringControllers.Any(c => proxyNode.Contains(c.position)))
+        {
+            //* Debug.Log(this.name + "- Mainpulation.cs");
             leap.ignoreGrasping = true;
             ChangeMode(ManipulationMode.Inside);
         }

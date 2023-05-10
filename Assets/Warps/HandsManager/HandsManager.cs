@@ -20,8 +20,12 @@ public class HandsManager : MonoBehaviour
     private void Update() {
         if(manipulation.Mode == ManipulationMode.Inside) {
             // Check which of the hands is inside
-            foreach (var hController in interactionBehaviour.hoveringControllers) {
-                if (hController.gameObject.tag == "BaseHand" && proxyNode.Contains(hController.position)) {
+            foreach (var hController in interactionBehaviour.hoveringControllers)
+            {
+                //* Debug.Log(hController.gameObject.name + hController.position);
+                if (hController.gameObject.tag == "BaseHand" && proxyNode.Contains(hController.position))
+                {
+                    //* Debug.Log("Hand position IN ProxyNode");
                     // Enable all the mark hands for the base hand that is inside
                     foreach (var mark in proxyNode.Marks) {
                         if (hController.isLeft) {

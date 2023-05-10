@@ -78,4 +78,9 @@ public class PlayerProxyStorage : MonoBehaviour
         }
         order = -1;
     }
+
+    public bool IsProxiesInStorage(ProxyNode proxy)
+    {
+        return proxies.Contains(proxy);
+    }
 }
