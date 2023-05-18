@@ -40,7 +40,7 @@ public class MarkManipulation : MonoBehaviour {
         leftHand = mark.LeftHand;
         rightHand = mark.RightHand;
         grabSphere = transform.Find("GrabSphere").gameObject;
-        grabSphere.SetActive(false);
+        //grabSphere.SetActive(false);
 
         grabSphereMaterial = grabSphere.GetComponent<Renderer>().material;
 
