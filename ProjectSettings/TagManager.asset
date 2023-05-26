@@ -6,6 +6,7 @@ TagManager:
   tags:
   - BaseHand
   - ExtraCamera
+  - Roi
   layers:
   - Default
   - TransparentFX
