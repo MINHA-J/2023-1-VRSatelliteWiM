@@ -6,6 +6,8 @@ TagManager:
   tags:
   - BaseHand
   - ExtraCamera
+  - Roi
+  - SphereMap
   layers:
   - Default
   - TransparentFX

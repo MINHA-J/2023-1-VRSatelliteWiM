@@ -28,6 +28,7 @@ public class ClipSphereRenderPass : ScriptableRenderPass {
     }
 
     public override void Execute(ScriptableRenderContext context, ref RenderingData renderingData) {
+        //* THINK
         var camera = renderingData.cameraData.camera;
         SortingCriteria sortFlags;
         if(filterSettings.renderQueueRange == RenderQueueRange.opaque) {
