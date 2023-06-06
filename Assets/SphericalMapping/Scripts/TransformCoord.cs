@@ -38,36 +38,48 @@ public class TransformCoord : MonoBehaviour
         Debug.DrawLine(this.transform.position, this.transform.position + this.transform.right * 50, Color.red, 400.0f);
     }
 
-    private void OnTriggerEnter(Collider other)
+    // 원래 Pin 꽂던 동작 여기서 했었음
+    // private void OnTriggerEnter(Collider other)
+    // {
+    //     // Debug.Log("Collision 발생" + other.gameObject.tag);
+    //     if (other.gameObject.tag == "Roi")
+    //     {
+    //         Vector3 proPos = other.transform.position;
+    //         other.gameObject.transform.SetParent(this.transform);
+    //         
+    //         //other.gameObject.GetComponent<Rigidbody>().isKinematic = true;
+    //         //Rigidbody rigidbody = other.gameObject.GetComponent<Rigidbody>();
+    //         //rigidbody.constraints = RigidbodyConstraints.FreezeAll;
+    //
+    //         Vector3 sphereNormalVec = other.gameObject.transform.localPosition;
+    //         Vector3 sphereVec = other.gameObject.transform.position;
+    //
+    //         getSphericalAngle(sphereNormalVec);
+    //         
+    //         //Debug.Log("Sphere Normalized Vector" + sphereNormalVec);
+    //         // Vector3 sphericalCoordinates = getSphericalCoordinates(other.gameObject.transform.localPosition, _radius);
+    //         // sphericalCoordinates = Quaternion.AngleAxis(-90, Vector3.right) * sphericalCoordinates.normalized;
+    //         // Vector3 cartesianCoordinates = getCartesianCoordinates(sphericalCoordinates);
+    //
+    //         Vector3 markPos = new Vector3(sphereNormalVec.x, 0.001f, sphereNormalVec.z);
+    //         //markPos = Quaternion.AngleAxis(90, Vector3.up) * markPos.normalized;
+    //         float scale = (sphereNormalVec - standard.transform.localPosition).sqrMagnitude *400;
+    //         
+    //         Vector3 markedPos = makeMarkObject(markPos, scale);
+    //         _sphereWorld.CreateProxies(markedPos, 100.0f, spawnPos.position);
+    //     }
+    // }
+
+    public void SetROI(Vector3 vec)
     {
-        // Debug.Log("Collision 발생" + other.gameObject.tag);
-        if (other.gameObject.tag == "Roi")
-        {
-            Vector3 proPos = other.transform.position;
-            other.gameObject.transform.SetParent(this.transform);
-            //other.gameObject.GetComponent<Rigidbody>().isKinematic = true;
-            Rigidbody rigidbody = other.gameObject.GetComponent<Rigidbody>();
-            rigidbody.constraints = RigidbodyConstraints.FreezeAll;
+        getSphericalAngle(vec);
 
-            Vector3 sphereNormalVec = other.gameObject.transform.localPosition;
-            Vector3 sphereVec = other.gameObject.transform.position;
-
-            getSphericalAngle(sphereNormalVec);
+        Vector3 markPos = new Vector3(vec.x, 0.001f, vec.z);
+        float scale = (vec - standard.transform.localPosition).sqrMagnitude *400;
             
-            //Debug.Log("Sphere Normalized Vector" + sphereNormalVec);
-            // Vector3 sphericalCoordinates = getSphericalCoordinates(other.gameObject.transform.localPosition, _radius);
-            // sphericalCoordinates = Quaternion.AngleAxis(-90, Vector3.right) * sphericalCoordinates.normalized;
-            // Vector3 cartesianCoordinates = getCartesianCoordinates(sphericalCoordinates);
-
-            Vector3 markPos = new Vector3(sphereNormalVec.x, 0.001f, sphereNormalVec.z);
-            //markPos = Quaternion.AngleAxis(90, Vector3.up) * markPos.normalized;
-            float scale = (sphereNormalVec - standard.transform.localPosition).sqrMagnitude *400;
-            
-            Vector3 markedPos = makeMarkObject(markPos, scale);
-            _sphereWorld.CreateProxies(markedPos, 100.0f, spawnPos.position);
-        }
+        Vector3 markedPos = Test_makeMarkObject(markPos, scale); // TODO: 임시로 표시함
+        _sphereWorld.CreateProxies(markedPos, 100.0f, spawnPos.position);
     }
-    
 
     private void getSphericalAngle(Vector3 point)
     {
@@ -89,7 +101,7 @@ public class TransformCoord : MonoBehaviour
         Debug.DrawLine(sphereCenter, sphereCenter + point * 3, Color.magenta, 200.0f, false);
     }
 
-    private Vector3 makeMarkObject(Vector3 cartesian, float scale)
+    private Vector3 Test_makeMarkObject(Vector3 cartesian, float scale)
     {
         GameObject instance = Instantiate(prefab);
         instance.transform.position = new Vector3(

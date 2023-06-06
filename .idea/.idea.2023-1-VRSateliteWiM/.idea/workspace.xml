@@ -5,529 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27871435-4791-48d4-8bd2-395091101b6b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/SphericalMapping/Scripts/ManipulationMap.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SphericalMapping/Scripts/ManipulationMap.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SphericalMapping/Scripts/MapGraspedPoseHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SphericalMapping/Scripts/MapGraspedPoseHandler.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SphericalMapping/Scripts/Satellite.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SphericalMapping/Scripts/Satellite.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.2023-1-VRSateliteWiM/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.2023-1-VRSateliteWiM/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Materials.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Materials/Glass.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Materials/Glass.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Materials/M_Imphenzia_LowPollyStyle.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Materials/M_Imphenzia_LowPollyStyle.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Materials/Material_Emmision_Red.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Materials/Material_Emmision_Red.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/01_DiningHall_01_Bottle#1.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/01_DiningHall_01_Bottle#1.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/01_DiningHall_01_Bottle#2.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/01_DiningHall_01_Bottle#2.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/01_DiningHall_01_Bottle#3.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/01_DiningHall_01_Bottle#3.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/01_DiningHall_01_Bowl#1.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/01_DiningHall_01_Bowl#1.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/01_DiningHall_01_Bowl#2.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/01_DiningHall_01_Bowl#2.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/01_DiningHall_01_Candels#1.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/01_DiningHall_01_Candels#1.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/01_DiningHall_01_Cup#1.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/01_DiningHall_01_Cup#1.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/01_DiningHall_01_Cup#2.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/01_DiningHall_01_Cup#2.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/01_DiningHall_01_WoodenChear#1.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/01_DiningHall_01_WoodenChear#1.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/01_DiningHall_01_WoodenChear#2.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/01_DiningHall_01_WoodenChear#2.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/01_DiningHall_01_WoodenTable#1.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/01_DiningHall_01_WoodenTable#1.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/01_Library_01_BigBook#1.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/01_Library_01_BigBook#1.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/01_Library_01_BigBook#2.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/01_Library_01_BigBook#2.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/01_Library_01_BookShelve_1.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/01_Library_01_BookShelve_1.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/01_Library_01_BookShelve_2.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/01_Library_01_BookShelve_2.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/01_Library_01_BookSmall_Blue.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/01_Library_01_BookSmall_Blue.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/01_Library_01_BookSmall_Green.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/01_Library_01_BookSmall_Green.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/01_Library_01_BookSmall_Purple.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/01_Library_01_BookSmall_Purple.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/01_Library_01_BookSmall_Red.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/01_Library_01_BookSmall_Red.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/01_Library_01_Candle#1.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/01_Library_01_Candle#1.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/01_Library_01_Chear_High#1.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/01_Library_01_Chear_High#1.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/01_Library_01_Chear_High#2.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/01_Library_01_Chear_High#2.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/01_Library_01_Desk#1.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/01_Library_01_Desk#1.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/01_Library_01_Desk#2.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/01_Library_01_Desk#2.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/01_Library_01_InkWell#1.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/01_Library_01_InkWell#1.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/02_Kitchen_01_Chopper.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/02_Kitchen_01_Chopper.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/02_Kitchen_01_CookingPot#1.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/02_Kitchen_01_CookingPot#1.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/02_Kitchen_01_CookingPot#1_Stander.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/02_Kitchen_01_CookingPot#1_Stander.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/02_Kitchen_01_CookingPot#2.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/02_Kitchen_01_CookingPot#2.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/02_Kitchen_01_CookingPot#3.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/02_Kitchen_01_CookingPot#3.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/02_Kitchen_01_CuttingBoard#2.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/02_Kitchen_01_CuttingBoard#2.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/02_Kitchen_01_CuttingBoard.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/02_Kitchen_01_CuttingBoard.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/02_Kitchen_01_SpoonBucket.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/02_Kitchen_01_SpoonBucket.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/02_Kitchen_01_WoodenTable#2.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/02_Kitchen_01_WoodenTable#2.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/03_Blacksmith_01_Anvil.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/03_Blacksmith_01_Anvil.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/03_Blacksmith_01_AnvilStand.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/03_Blacksmith_01_AnvilStand.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/03_Blacksmith_01_Blower.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/03_Blacksmith_01_Blower.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/03_Blacksmith_01_CooperBar.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/03_Blacksmith_01_CooperBar.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/03_Blacksmith_01_Forge.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/03_Blacksmith_01_Forge.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/03_Blacksmith_01_GrindingWheel_Frame.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/03_Blacksmith_01_GrindingWheel_Frame.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/03_Blacksmith_01_GrindingWheel_Wheel.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/03_Blacksmith_01_GrindingWheel_Wheel.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/03_Blacksmith_01_Hammer#1.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/03_Blacksmith_01_Hammer#1.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/03_Blacksmith_01_Hammer#2.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/03_Blacksmith_01_Hammer#2.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/03_Blacksmith_01_IronBar.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/03_Blacksmith_01_IronBar.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/03_Blacksmith_01_WoodenRack.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/03_Blacksmith_01_WoodenRack.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/04_Bedroom_01_Beed_1.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/04_Bedroom_01_Beed_1.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/04_Bedroom_01_Beed_2.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/04_Bedroom_01_Beed_2.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/04_Bedroom_01_Beed_3.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/04_Bedroom_01_Beed_3.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/04_Bedroom_01_Beed_4.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/04_Bedroom_01_Beed_4.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/04_Bedroom_01_Matrace_ForBeed_1.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/04_Bedroom_01_Matrace_ForBeed_1.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/04_Bedroom_01_Matrace_ForBeed_2.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/04_Bedroom_01_Matrace_ForBeed_2.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/05_Vault_01_Chest_Bottom#1.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/05_Vault_01_Chest_Bottom#1.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/05_Vault_01_Chest_Top#1.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/05_Vault_01_Chest_Top#1.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/05_Vault_01_Coin#1.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/05_Vault_01_Coin#1.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/05_Vault_01_Emerald#1.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/05_Vault_01_Emerald#1.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/05_Vault_01_Rubin#1.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/05_Vault_01_Rubin#1.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/96_Traps_Trap_Cannon.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/96_Traps_Trap_Cannon.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/96_Traps_Trap_FloorWheel.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/96_Traps_Trap_FloorWheel.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/96_Traps_Trap_RamTower.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/96_Traps_Trap_RamTower.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/96_Traps_Trap_Spiner.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/96_Traps_Trap_Spiner.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/97_Othert_Amphora_Destroyable.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/97_Othert_Amphora_Destroyable.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/97_Othert_Amphora_Whole.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/97_Othert_Amphora_Whole.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/97_Othert_Barrel_MK2.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/97_Othert_Barrel_MK2.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/97_Othert_Barrel_Whole.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/97_Othert_Barrel_Whole.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/97_Othert_Key_Green.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/97_Othert_Key_Green.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/97_Othert_Key_Green_2.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/97_Othert_Key_Green_2.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/97_Othert_Key_Red.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/97_Othert_Key_Red.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/97_Othert_Key_Red_2.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/97_Othert_Key_Red_2.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/97_Othert_Key_Yellow.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/97_Othert_Key_Yellow.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/97_Othert_Key_Yellow_2.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/97_Othert_Key_Yellow_2.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/97_Othert_PracticeTarget.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/97_Othert_PracticeTarget.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/97_Othert_Splash_1.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/97_Othert_Splash_1.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/97_Othert_Star.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/97_Othert_Star.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/97_Othert_Torch_1.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/97_Othert_Torch_1.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/99_Decorations_SpiderWebb_1.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/99_Decorations_SpiderWebb_1.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/99_Decorations_SpiderWebb_2.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/99_Decorations_SpiderWebb_2.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/99_Decorations_WallBanner_0.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/99_Decorations_WallBanner_0.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/99_Decorations_WallBanner_1.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/99_Decorations_WallBanner_1.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/99_Decorations_WallBanner_2.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/99_Decorations_WallBanner_2.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/99_Decorations_WallBanner_3.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/99_Decorations_WallBanner_3.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/99_Decorations_WallBanner_4.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/99_Decorations_WallBanner_4.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/99_Decorations_WallBanner_5.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/99_Decorations_WallBanner_5.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/99_Enviroment_Column_Rocky_1.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/99_Enviroment_Column_Rocky_1.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/99_Enviroment_Doors.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/99_Enviroment_Doors.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/99_Enviroment_DoorsFake#1.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/99_Enviroment_DoorsFake#1.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/99_Enviroment_DoorsFake#2.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/99_Enviroment_DoorsFake#2.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/99_Enviroment_Floor_01.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/99_Enviroment_Floor_01.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/99_Enviroment_Floor_02.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/99_Enviroment_Floor_02.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/99_Enviroment_Floor_03.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/99_Enviroment_Floor_03.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/99_Enviroment_Floor_05.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/99_Enviroment_Floor_05.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/99_Enviroment_Stears.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/99_Enviroment_Stears.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/99_Enviroment_Wall_01.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/99_Enviroment_Wall_01.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/99_Enviroment_Wall_02.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/99_Enviroment_Wall_02.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/99_Enviroment_Wall_03.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Models/99_Enviroment_Wall_03.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/01_DiningHall_01_Bottle#1.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/01_DiningHall_01_Bottle#1.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/01_DiningHall_01_Bottle#2.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/01_DiningHall_01_Bottle#2.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/01_DiningHall_01_Bottle#3.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/01_DiningHall_01_Bottle#3.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/01_DiningHall_01_Bowl#1.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/01_DiningHall_01_Bowl#1.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/01_DiningHall_01_Bowl#2.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/01_DiningHall_01_Bowl#2.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/01_DiningHall_01_Candels#1.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/01_DiningHall_01_Candels#1.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/01_DiningHall_01_Cup#1.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/01_DiningHall_01_Cup#1.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/01_DiningHall_01_Cup#2.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/01_DiningHall_01_Cup#2.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/01_DiningHall_01_WoodenChear#1.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/01_DiningHall_01_WoodenChear#1.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/01_DiningHall_01_WoodenChear#2.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/01_DiningHall_01_WoodenChear#2.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/01_DiningHall_01_WoodenTable#1.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/01_DiningHall_01_WoodenTable#1.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/01_Library_01_BigBook#1.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/01_Library_01_BigBook#1.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/01_Library_01_BigBook#2.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/01_Library_01_BigBook#2.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/01_Library_01_BookShelve_1.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/01_Library_01_BookShelve_1.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/01_Library_01_BookShelve_2.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/01_Library_01_BookShelve_2.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/01_Library_01_BookSmall_Blue.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/01_Library_01_BookSmall_Blue.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/01_Library_01_BookSmall_Green.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/01_Library_01_BookSmall_Green.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/01_Library_01_BookSmall_Purple.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/01_Library_01_BookSmall_Purple.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/01_Library_01_BookSmall_Red.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/01_Library_01_BookSmall_Red.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/01_Library_01_Candle#1.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/01_Library_01_Candle#1.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/01_Library_01_Chear_High#1.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/01_Library_01_Chear_High#1.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/01_Library_01_Chear_High#2.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/01_Library_01_Chear_High#2.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/01_Library_01_Desk#1.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/01_Library_01_Desk#1.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/01_Library_01_Desk#2.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/01_Library_01_Desk#2.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/01_Library_01_InkWell#1.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/01_Library_01_InkWell#1.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/02_Kitchen_01_Chopper.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/02_Kitchen_01_Chopper.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/02_Kitchen_01_CookingPot#1.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/02_Kitchen_01_CookingPot#1.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/02_Kitchen_01_CookingPot#1_Stander.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/02_Kitchen_01_CookingPot#1_Stander.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/02_Kitchen_01_CookingPot#2.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/02_Kitchen_01_CookingPot#2.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/02_Kitchen_01_CookingPot#3.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/02_Kitchen_01_CookingPot#3.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/02_Kitchen_01_CuttingBoard#2.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/02_Kitchen_01_CuttingBoard#2.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/02_Kitchen_01_CuttingBoard.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/02_Kitchen_01_CuttingBoard.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/02_Kitchen_01_SpoonBucket.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/02_Kitchen_01_SpoonBucket.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/02_Kitchen_01_WoodenTable#2.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/02_Kitchen_01_WoodenTable#2.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/03_Blacksmith_01_Anvil.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/03_Blacksmith_01_Anvil.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/03_Blacksmith_01_AnvilStand.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/03_Blacksmith_01_AnvilStand.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/03_Blacksmith_01_Blower.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/03_Blacksmith_01_Blower.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/03_Blacksmith_01_CooperBar.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/03_Blacksmith_01_CooperBar.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/03_Blacksmith_01_Forge.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/03_Blacksmith_01_Forge.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/03_Blacksmith_01_GrindingWheel_Frame.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/03_Blacksmith_01_GrindingWheel_Frame.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/03_Blacksmith_01_GrindingWheel_Wheel.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/03_Blacksmith_01_GrindingWheel_Wheel.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/03_Blacksmith_01_Hammer#1.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/03_Blacksmith_01_Hammer#1.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/03_Blacksmith_01_Hammer#2.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/03_Blacksmith_01_Hammer#2.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/03_Blacksmith_01_IronBar.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/03_Blacksmith_01_IronBar.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/03_Blacksmith_01_WoodenRack.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/03_Blacksmith_01_WoodenRack.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/04_Bedroom_01_Beed_1.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/04_Bedroom_01_Beed_1.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/04_Bedroom_01_Beed_2.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/04_Bedroom_01_Beed_2.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/04_Bedroom_01_Beed_3.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/04_Bedroom_01_Beed_3.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/04_Bedroom_01_Beed_4.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/04_Bedroom_01_Beed_4.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/04_Bedroom_01_Matrace_ForBeed_1.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/04_Bedroom_01_Matrace_ForBeed_1.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/04_Bedroom_01_Matrace_ForBeed_2.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/04_Bedroom_01_Matrace_ForBeed_2.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/05_Vault_01_Chest_Bottom#1.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/05_Vault_01_Chest_Bottom#1.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/05_Vault_01_Chest_Top#1.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/05_Vault_01_Chest_Top#1.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/05_Vault_01_Coin#1.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/05_Vault_01_Coin#1.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/05_Vault_01_Emerald#1.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/05_Vault_01_Emerald#1.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/05_Vault_01_Rubin#1.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/05_Vault_01_Rubin#1.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/96_Traps_Trap_Cannon.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/96_Traps_Trap_Cannon.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/96_Traps_Trap_FloorWheel.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/96_Traps_Trap_FloorWheel.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/96_Traps_Trap_RamTower.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/96_Traps_Trap_RamTower.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/96_Traps_Trap_Spiner.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/96_Traps_Trap_Spiner.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/97_Othert_Amphora_Destroyable.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/97_Othert_Amphora_Destroyable.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/97_Othert_Amphora_Whole.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/97_Othert_Amphora_Whole.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/97_Othert_Barrel_MK2.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/97_Othert_Barrel_MK2.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/97_Othert_Barrel_Whole.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/97_Othert_Barrel_Whole.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/97_Othert_Key_Green.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/97_Othert_Key_Green.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/97_Othert_Key_Green_2.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/97_Othert_Key_Green_2.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/97_Othert_Key_Red.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/97_Othert_Key_Red.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/97_Othert_Key_Red_2.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/97_Othert_Key_Red_2.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/97_Othert_Key_Yellow.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/97_Othert_Key_Yellow.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/97_Othert_Key_Yellow_2.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/97_Othert_Key_Yellow_2.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/97_Othert_PracticeTarget.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/97_Othert_PracticeTarget.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/97_Othert_Splash_1.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/97_Othert_Splash_1.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/97_Othert_Star.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/97_Othert_Star.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/97_Othert_Torch_1.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/97_Othert_Torch_1.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/99_Decorations_SpiderWebb_1.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/99_Decorations_SpiderWebb_1.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/99_Decorations_SpiderWebb_2.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/99_Decorations_SpiderWebb_2.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/99_Decorations_WallBanner_0.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/99_Decorations_WallBanner_0.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/99_Decorations_WallBanner_1.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/99_Decorations_WallBanner_1.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/99_Decorations_WallBanner_2.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/99_Decorations_WallBanner_2.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/99_Decorations_WallBanner_3.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/99_Decorations_WallBanner_3.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/99_Decorations_WallBanner_4.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/99_Decorations_WallBanner_4.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/99_Decorations_WallBanner_5.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/99_Decorations_WallBanner_5.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/99_Enviroment_Column_Rocky_1.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/99_Enviroment_Column_Rocky_1.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/99_Enviroment_Doors.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/99_Enviroment_Doors.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/99_Enviroment_DoorsFake#1.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/99_Enviroment_DoorsFake#1.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/99_Enviroment_DoorsFake#2.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/99_Enviroment_DoorsFake#2.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/99_Enviroment_Floor_01.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/99_Enviroment_Floor_01.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/99_Enviroment_Floor_02.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/99_Enviroment_Floor_02.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/99_Enviroment_Floor_03.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/99_Enviroment_Floor_03.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/99_Enviroment_Floor_05.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/99_Enviroment_Floor_05.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/99_Enviroment_Stears.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/99_Enviroment_Stears.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/99_Enviroment_Wall_01.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/99_Enviroment_Wall_01.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/99_Enviroment_Wall_02.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/99_Enviroment_Wall_02.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/99_Enviroment_Wall_03.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Prefabs/99_Enviroment_Wall_03.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Scenes.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Scenes/DemoScene_Room1.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Scenes/DemoScene_Room1.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Scenes/DemoScene_Room2.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Scenes/DemoScene_Room2.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Scenes/DemoScene_Room3.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Scenes/DemoScene_Room3.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Textures.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Textures/K4DvOYlE.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CatBorg Studio/3D Dungeon Lowpoly Pack/Textures/K4DvOYlE.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Darth_Artisan.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Darth_Artisan/Free_Trees.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Darth_Artisan/Free_Trees/Meshes.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Darth_Artisan/Free_Trees/Meshes/Fir_Tree.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Darth_Artisan/Free_Trees/Meshes/Fir_Tree.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Darth_Artisan/Free_Trees/Meshes/Materials.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Darth_Artisan/Free_Trees/Meshes/Materials/Free_Tree.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Darth_Artisan/Free_Trees/Meshes/Materials/Free_Tree.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Darth_Artisan/Free_Trees/Meshes/Materials/No Name.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Darth_Artisan/Free_Trees/Meshes/Materials/No Name.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Darth_Artisan/Free_Trees/Meshes/Oak_Tree.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Darth_Artisan/Free_Trees/Meshes/Oak_Tree.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Darth_Artisan/Free_Trees/Meshes/Palm_Tree.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Darth_Artisan/Free_Trees/Meshes/Palm_Tree.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Darth_Artisan/Free_Trees/Meshes/Poplar_Tree.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Darth_Artisan/Free_Trees/Meshes/Poplar_Tree.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Darth_Artisan/Free_Trees/Prefabs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Darth_Artisan/Free_Trees/Prefabs/Fir_Tree.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Darth_Artisan/Free_Trees/Prefabs/Fir_Tree.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Darth_Artisan/Free_Trees/Prefabs/Oak_Tree.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Darth_Artisan/Free_Trees/Prefabs/Oak_Tree.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Darth_Artisan/Free_Trees/Prefabs/Palm_Tree.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Darth_Artisan/Free_Trees/Prefabs/Palm_Tree.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Darth_Artisan/Free_Trees/Prefabs/Poplar_Tree.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Darth_Artisan/Free_Trees/Prefabs/Poplar_Tree.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Darth_Artisan/Free_Trees/Textures.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Darth_Artisan/Free_Trees/Textures/tree_diffuse.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Darth_Artisan/Free_Trees/Textures/tree_diffuse.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FantasyEnvironments.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FantasyEnvironments/Environments.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FantasyEnvironments/Environments/Ambient-Occlusion-Trees.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FantasyEnvironments/Environments/Ambient-Occlusion-Trees/FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FantasyEnvironments/Environments/Ambient-Occlusion-Trees/FBX/Birch_tree1.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FantasyEnvironments/Environments/Ambient-Occlusion-Trees/FBX/Birch_tree1.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FantasyEnvironments/Environments/Ambient-Occlusion-Trees/Materials.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FantasyEnvironments/Environments/Ambient-Occlusion-Trees/Materials/Birch_bark.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FantasyEnvironments/Environments/Ambient-Occlusion-Trees/Materials/Birch_bark.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FantasyEnvironments/Environments/Ambient-Occlusion-Trees/Materials/Birch_leaves 1.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FantasyEnvironments/Environments/Ambient-Occlusion-Trees/Materials/Birch_leaves 1.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FantasyEnvironments/Environments/Ambient-Occlusion-Trees/Materials/Birch_leaves.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FantasyEnvironments/Environments/Ambient-Occlusion-Trees/Materials/Birch_leaves.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FantasyEnvironments/Environments/Ambient-Occlusion-Trees/Prefabs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FantasyEnvironments/Environments/Ambient-Occlusion-Trees/Prefabs/Birch_tree1.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FantasyEnvironments/Environments/Ambient-Occlusion-Trees/Prefabs/Birch_tree1.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FantasyEnvironments/Environments/Ambient-Occlusion-Trees/Prefabs/Birch_tree2.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FantasyEnvironments/Environments/Ambient-Occlusion-Trees/Prefabs/Birch_tree2.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FantasyEnvironments/Environments/Ambient-Occlusion-Trees/Textures.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FantasyEnvironments/Environments/Ambient-Occlusion-Trees/Textures/Birch_bark.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FantasyEnvironments/Environments/Ambient-Occlusion-Trees/Textures/Birch_bark.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FantasyEnvironments/Environments/Ambient-Occlusion-Trees/Textures/Birch_leaves.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FantasyEnvironments/Environments/Ambient-Occlusion-Trees/Textures/Birch_leaves.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FantasyEnvironments/Environments/FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FantasyEnvironments/Environments/FBX/Flower1.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FantasyEnvironments/Environments/FBX/Flower1.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FantasyEnvironments/Environments/FBX/Flower2.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FantasyEnvironments/Environments/FBX/Flower2.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FantasyEnvironments/Environments/FBX/Grass1.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FantasyEnvironments/Environments/FBX/Grass1.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FantasyEnvironments/Environments/FBX/Mushroom1.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FantasyEnvironments/Environments/FBX/Mushroom1.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FantasyEnvironments/Environments/Materials.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FantasyEnvironments/Environments/Materials/Plant.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FantasyEnvironments/Environments/Materials/Plant.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FantasyEnvironments/Environments/Terrain.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FantasyEnvironments/Environments/Terrain.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FantasyEnvironments/Environments/Textures.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FantasyEnvironments/Environments/Textures/Plant.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FantasyEnvironments/Environments/Textures/Plant.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FantasyEnvironments/Environments/Textures/ground_grass.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FantasyEnvironments/Environments/Textures/ground_grass.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FantasyEnvironments/Environments/Textures/ground_road.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FantasyEnvironments/Environments/Textures/ground_road.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FisheyeAssets.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FisheyeAssets/180degreesX5.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FisheyeAssets/180degreesX5/180_bottom.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FisheyeAssets/180degreesX5/180_bottom.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FisheyeAssets/180degreesX5/180_front.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FisheyeAssets/180degreesX5/180_front.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FisheyeAssets/180degreesX5/180_left.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FisheyeAssets/180degreesX5/180_left.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FisheyeAssets/180degreesX5/180_right.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FisheyeAssets/180degreesX5/180_right.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FisheyeAssets/180degreesX5/180_top.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FisheyeAssets/180degreesX5/180_top.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FisheyeAssets/Texture.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FisheyeAssets/Texture/Materials.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FisheyeAssets/Texture/Materials/bottom_camera_texture.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FisheyeAssets/Texture/Materials/bottom_camera_texture.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FisheyeAssets/Texture/Materials/front_camera_render_texture.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FisheyeAssets/Texture/Materials/front_camera_render_texture.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FisheyeAssets/Texture/Materials/left_camera_texture.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FisheyeAssets/Texture/Materials/left_camera_texture.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FisheyeAssets/Texture/Materials/right_camera_texture.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FisheyeAssets/Texture/Materials/right_camera_texture.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FisheyeAssets/Texture/Materials/top_camera_texture.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FisheyeAssets/Texture/Materials/top_camera_texture.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FisheyeAssets/Texture/bottom_camera_texture.renderTexture" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FisheyeAssets/Texture/bottom_camera_texture.renderTexture.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FisheyeAssets/Texture/front_camera_render_texture.renderTexture" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FisheyeAssets/Texture/front_camera_render_texture.renderTexture.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FisheyeAssets/Texture/left_camera_texture.renderTexture" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FisheyeAssets/Texture/left_camera_texture.renderTexture.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FisheyeAssets/Texture/right_camera_texture.renderTexture" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FisheyeAssets/Texture/right_camera_texture.renderTexture.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FisheyeAssets/Texture/top_camera_texture.renderTexture" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FisheyeAssets/Texture/top_camera_texture.renderTexture.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/checkerboard.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/checkerboard.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Oculus/Interaction/Samples/Objects/Props/BigRedButton/Materials/ButtonRingShadowMat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/Interaction/Samples/Objects/Props/BigRedButton/Materials/ButtonRingShadowMat.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/Locomotion/Materials/MAT_grid_01_dark.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/Locomotion/Materials/MAT_grid_01_dark.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/Locomotion/Materials/MAT_grid_01_light.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/Locomotion/Materials/MAT_grid_01_light.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/MarkNode.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/MarkNode.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImportPackage/3D Dungeon Lowpoly Pack/Materials/Glass.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ImportPackage/3D Dungeon Lowpoly Pack/Materials/Glass.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/TransparentLit.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/TransparentLit.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CameraController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SphericalMapping/postProcessRenderTexture.renderTexture" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SphericalMapping/postProcessRenderTexture.renderTexture" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_TerrainAutoUpgrade.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_TerrainAutoUpgrade/layer_ground_grasscd2d2d038030d602.terrainlayer" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_TerrainAutoUpgrade/layer_ground_grasscd2d2d038030d602.terrainlayer.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_TerrainAutoUpgrade/layer_ground_roadcd2d2d038030d602.terrainlayer" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_TerrainAutoUpgrade/layer_ground_roadcd2d2d038030d602.terrainlayer.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SphericalMapping/Prefabs/checkRoi (1).prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SphericalMapping/Prefabs/checkRoi (1).prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SphericalMapping/Scripts/Satellite.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SphericalMapping/Scripts/Satellite.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SphericalMapping/Scripts/SphericaiWorld.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SphericalMapping/Scripts/SphericaiWorld.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SphericalMapping/Scripts/SphericalWorldPin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SphericalMapping/Scripts/SphericalWorldPin.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SphericalMapping/Scripts/TransformCoord.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SphericalMapping/Scripts/TransformCoord.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ThirdParty/Ultraleap/Tracking/Examples/Example Assets/Hands Examples/Hands (Standard)/Lamb_LoPolyHand.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ThirdParty/Ultraleap/Tracking/Examples/Example Assets/Hands Examples/Hands (Standard)/Lamb_LoPolyHand.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -601,27 +88,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "XThreadsFramesViewSplitterKey": "0.5060449",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.5060449&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\user\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\DecompilerCache",
-      "C:\\Users\\user\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\SourcesCache",
-      "C:\\Users\\user\\AppData\\Local\\Symbols\\src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\user\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\user\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\user\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RiderProblemsViewState">
     <hideBySeverity>
       <option value="20" />
@@ -655,10 +142,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="28152">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="28152" />
+      <option name="pid" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -694,6 +181,8 @@
       <workItem from="1684414781272" duration="4793000" />
       <workItem from="1684436363892" duration="20093000" />
       <workItem from="1685032744675" duration="20504000" />
+      <workItem from="1685597102983" duration="2801000" />
+      <workItem from="1686033753126" duration="10983000" />
     </task>
     <servers />
   </component>
@@ -715,24 +204,5 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/SphericalMapping/Scripts/SphericalWorldPin.cs</url>
-          <line>20</line>
-          <properties documentPath="C:\Users\user\Documents\Unity Projects\2023-1-VRSateliteWiM\Assets\SphericalMapping\Scripts\SphericalWorldPin.cs" initialLine="19" containingFunctionPresentation="Method 'OnTriggerEnter'">
-            <startOffsets>
-              <option value="499" />
-            </startOffsets>
-            <endOffsets>
-              <option value="600" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

@@ -5,14 +5,32 @@ using UnityEngine.Serialization;
 
 public class SphericaiWorld : MonoBehaviour
 {
-    [Header("Basic")] 
-    public List<GameObject> satellite = new List<GameObject>();
+    [Header("Basic")]
+    public Dictionary<uint, GameObject> SatelliteTable = new Dictionary<uint, GameObject>();
     
     // Create Proxy
     OneEuroFilter<Vector3> markPosFilter = new OneEuroFilter<Vector3>(30.0f, 0.3f);
     OneEuroFilter<Vector3> proxyPosFilter = new OneEuroFilter<Vector3>(30.0f, 0.3f);
     OneEuroFilter markScaleFilter = new OneEuroFilter(30.0f);
     OneEuroFilter proxyScaleFilter = new OneEuroFilter(30.0f);
+
+    
+    #region SphericaiWorld Singleton 
+    private static SphericaiWorld instance;
+
+    public static SphericaiWorld Instance
+    {
+        get
+        {
+            if (instance == null)
+            {
+                return null;
+            }
+
+            return instance;
+        }
+    }
+    #endregion
     
     void Start()
     {
@@ -20,12 +38,12 @@ public class SphericaiWorld : MonoBehaviour
     }
 
     /// <summary>
-    /// Spherical world에서 Pin으로 선택된 ROI를 Set
+    /// Spherical world에서 Pin으로 선택된 ROI를 Set, Satellite를 생성
     /// </summary>
     /// <param name="pin">Detect Collider</param>
-    public void SetSatellite(GameObject pin)
+    public void SaveSatellite(GameObject pin)
     {
-
+        pin.GetComponent<Satellite>();
     }
     
     public void CreateProxies(Vector3 M_pos, float size, Vector3 P_pos)

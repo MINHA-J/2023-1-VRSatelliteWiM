@@ -6,9 +6,15 @@ using UnityEngine.Serialization;
 public class Satellite : MonoBehaviour
 {
     public Vector3 pos;
-    private MarkNode markRoi;
-    private ProxyNode proxy;
+    [SerializeField] private uint index;
+    [SerializeField] private MarkNode markRoi;
+    [SerializeField] private ProxyNode proxy;
 
+    public void SetSatelliteIndex(uint i)
+    {
+        index = i;
+    }
+    
     public void SetProxies(MarkNode m, ProxyNode p)
     {
         markRoi = m;
