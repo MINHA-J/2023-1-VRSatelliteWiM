@@ -25,7 +25,7 @@ public class CameraController : MonoBehaviour
 			    -this.transform.position.z);
 		    
 		    this.transform.position = newPos;
-		    Debug.Log("Camera Pos Change");
+		    //Debug.Log("Camera Pos Change");
 	    }
     }
     

@@ -7,7 +7,8 @@ public class SphericaiWorld : MonoBehaviour
 {
     [Header("Basic")]
     public Dictionary<uint, GameObject> SatelliteTable = new Dictionary<uint, GameObject>();
-    
+    public Dictionary<uint, ProxyNode> ProxiesTable = new Dictionary<uint, ProxyNode>();
+
     // Create Proxy
     OneEuroFilter<Vector3> markPosFilter = new OneEuroFilter<Vector3>(30.0f, 0.3f);
     OneEuroFilter<Vector3> proxyPosFilter = new OneEuroFilter<Vector3>(30.0f, 0.3f);

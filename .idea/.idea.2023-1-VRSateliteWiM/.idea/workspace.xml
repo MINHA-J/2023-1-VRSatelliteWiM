@@ -6,16 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="27871435-4791-48d4-8bd2-395091101b6b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.2023-1-VRSateliteWiM/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.2023-1-VRSateliteWiM/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ImportPackage/3D Dungeon Lowpoly Pack/Materials/Glass.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ImportPackage/3D Dungeon Lowpoly Pack/Materials/Glass.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/TransparentLit.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/TransparentLit.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SphericalMapping/Prefabs/checkRoi (1).prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SphericalMapping/Prefabs/checkRoi (1).prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SphericalMapping/Scripts/Satellite.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SphericalMapping/Scripts/Satellite.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/6-SatelliteScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/6-SatelliteScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CameraController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SphericalMapping/Scripts/InteractionSphericalMap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SphericalMapping/Scripts/InteractionSphericalMap.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/SphericalMapping/Scripts/SphericaiWorld.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SphericalMapping/Scripts/SphericaiWorld.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SphericalMapping/Scripts/SphericalWorldPin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SphericalMapping/Scripts/SphericalWorldPin.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SphericalMapping/Scripts/TransformCoord.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SphericalMapping/Scripts/TransformCoord.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ThirdParty/Ultraleap/Tracking/Examples/Example Assets/Hands Examples/Hands (Standard)/Lamb_LoPolyHand.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ThirdParty/Ultraleap/Tracking/Examples/Example Assets/Hands Examples/Hands (Standard)/Lamb_LoPolyHand.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ThirdParty/Ultraleap/Tracking/Examples/Example Assets/3D Interaction/Materials/Green Standard.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ThirdParty/Ultraleap/Tracking/Examples/Example Assets/3D Interaction/Materials/Green Standard.mat" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,7 +178,10 @@
       <workItem from="1684436363892" duration="20093000" />
       <workItem from="1685032744675" duration="20504000" />
       <workItem from="1685597102983" duration="2801000" />
-      <workItem from="1686033753126" duration="10983000" />
+      <workItem from="1686033753126" duration="13852000" />
+      <workItem from="1686064466644" duration="1225000" />
+      <workItem from="1686128461676" duration="1191000" />
+      <workItem from="1686129915643" duration="3647000" />
     </task>
     <servers />
   </component>
