@@ -95,7 +95,7 @@ public class InteractionSphericalMap : MonoBehaviour
         
         delta.y = 0.0f; //delta.y = Mathf.Sign(delta.y) * CoolMath.SmoothStep(0.1f, 0.2f, Mathf.Abs(delta.y));
         //delta.z = Mathf.Sign(delta.z) * CoolMath.SmoothStep(0.1f, 0.2f, delta.z);
-        delta.z = Mathf.Sign(delta.z) * CoolMath.SmoothStep(0.1f, 0.2f, Mathf.Abs(delta.z));
+        delta.z = Mathf.Sign(delta.z) * CoolMath.SmoothStep(0.1f, 0.2f, delta.z);
         //delta.z = Mathf.Sign(delta.x) * CoolMath.SmoothStep(0.1f, 0.2f, Mathf.Abs(delta.x));
 
         Debug.Log("Standard" + _standard + ", grabPos:" + grabPos + ", delta:" + delta);

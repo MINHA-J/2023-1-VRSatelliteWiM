@@ -18,7 +18,7 @@ public class TransformCoord : MonoBehaviour
     //public float scale_ = 20.0f;
     public GameObject standard;
     public Transform spawnPos;
-    [SerializeField] private float _radius = 0.5f;
+    [SerializeField] private float _radius = 0.25f;
     [SerializeField] private Vector3 _camPosition;
     
     
@@ -33,9 +33,9 @@ public class TransformCoord : MonoBehaviour
         _radius = GetComponent<SphereCollider>().radius;
 
         Vector3 localUp = new Vector3(Mathf.Cos(transform.rotation.z), Mathf.Cos(transform.rotation.y), Mathf.Cos(transform.rotation.x));
-        Debug.DrawLine(this.transform.position, this.transform.position + this.transform.up * 50, Color.green, 400.0f);
-        Debug.DrawLine(this.transform.position, this.transform.position + this.transform.forward * 50, Color.blue, 400.0f);
-        Debug.DrawLine(this.transform.position, this.transform.position + this.transform.right * 50, Color.red, 400.0f);
+        //Debug.DrawLine(this.transform.position, this.transform.position + this.transform.up * 50, Color.green, 400.0f);
+        //Debug.DrawLine(this.transform.position, this.transform.position + this.transform.forward * 50, Color.blue, 400.0f);
+        //Debug.DrawLine(this.transform.position, this.transform.position + this.transform.right * 50, Color.red, 400.0f);
     }
 
     // 원래 Pin 꽂던 동작 여기서 했었음
@@ -70,25 +70,27 @@ public class TransformCoord : MonoBehaviour
     //     }
     // }
 
-    public void SetROI(Vector3 vec)
+    public void SetROI(Vector3 localVec)
     {
-        getSphericalAngle(vec);
+        // point는 local positive
+        Vector3 localToWorld = getSphericalAngle(localVec);
 
-        Vector3 markPos = new Vector3(vec.x, 0.001f, vec.z);
-        float scale = (vec - standard.transform.localPosition).sqrMagnitude *400;
+        //Vector3 markPos = new Vector3(localVec.x, 0.001f, localVec.z);
+        //float scale = (localVec - standard.transform.localPosition).sqrMagnitude * 100.0f;
             
-        Vector3 markedPos = Test_makeMarkObject(markPos, scale); // TODO: 임시로 표시함
-        _sphereWorld.CreateProxies(markedPos, 100.0f, spawnPos.position);
+        //Vector3 markedPos = Test_makeMarkObject(markPos, scale); // TODO: 임시로 표시함
+        //_sphereWorld.CreateProxies(markedPos, 100.0f, spawnPos.position);
+        _sphereWorld.CreateProxies(localToWorld, 100.0f, spawnPos.position);
     }
 
-    private void getSphericalAngle(Vector3 point)
+    private Vector3 getSphericalAngle(Vector3 point)
     {
+        // point는 local position
         // 구의 중심 좌표
-        //Vector3 sphereCenter = this.transform.position;
-        Vector3 sphereCenter = new Vector3(0, 0, 0);
-        
+        Vector3 Center = new Vector3(0, 0, 0);
+        //Vector3 sphereCenter = new Vector3(0, 0, 0);
         // 중심과 점 사이의 직선 벡터 계산
-        Vector3 between = new Vector3(point.x - sphereCenter.x, point.y - sphereCenter.y, point.z - sphereCenter.z);
+        Vector3 between = new Vector3(point.x - Center.x, point.y - Center.y, point.z - Center.z);
         
         // 직선 벡터를 구의 표면과의 교점으로 정규화
         double length = Math.Sqrt(between.x * between.x + between.y * between.y + between.z * between.z);
@@ -96,9 +98,20 @@ public class TransformCoord : MonoBehaviour
         
         // 각도 계산
         double angle = Math.Acos(-normalize.z) * 180 / Math.PI;
-    
-        Debug.Log("Sphere Normalized Vector: " + angle);
-        Debug.DrawLine(sphereCenter, sphereCenter + point * 3, Color.magenta, 200.0f, false);
+        
+        // local position에서 World로 변환
+        Vector3 result = -standard.transform.localPosition + point;
+        Debug.DrawLine(Center, result * point.sqrMagnitude, Color.gray, 200.0f, false);
+        result =  Quaternion.AngleAxis(90.0f, Vector3.right) * between;
+        //result =  Quaternion.AngleAxis(270.0f, Vector3.forward) * result;
+        //Debug.DrawLine(Center, result * point.sqrMagnitude, Color.magenta, 200.0f, false);
+        
+        //Debug.DrawLine(Center, Center + point * point.sqrMagnitude, Color.magenta, 200.0f, false);
+        result.y = 0.03f;
+        result *= point.sqrMagnitude * 80.0f;
+        Debug.DrawLine(Center, result, Color.yellow, 200.0f, false);
+
+        return result;
     }
 
     private Vector3 Test_makeMarkObject(Vector3 cartesian, float scale)
@@ -118,7 +131,7 @@ public class TransformCoord : MonoBehaviour
 
     public void Update()
     {
-        //_camPosition = cam.transform.position;
+        _camPosition = cam.transform.position;
         //Debug.Log(_camPosition);
     }
 
