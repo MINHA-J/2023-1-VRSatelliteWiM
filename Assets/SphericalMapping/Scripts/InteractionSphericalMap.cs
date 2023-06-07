@@ -8,11 +8,9 @@ using UnityEngine.Serialization;
 [RequireComponent(typeof(InteractionBehaviour))]
 public class InteractionSphericalMap : MonoBehaviour
 {
-    [Header("Setting")]
-    public GameObject cam;
-    public GameObject sphericalMap;
-    public GameObject satellites;
-    
+    private GameObject cam;
+    private GameObject sphericalMap;
+
     private InteractionBehaviour grabSphericalMapLeap;
     private InteractionHand grabHand;
     private Vector3 initialGrabOffset;
@@ -25,22 +23,21 @@ public class InteractionSphericalMap : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        cam = SphericaiWorld.Instance.cam;
+        sphericalMap = SphericaiWorld.Instance.sphericalMap;
 
         GameObject s = GameObject.Find("standard");
         Transform P = s.transform.parent;
         s.transform.SetParent(null);
         _standard = s.transform.position;
         s.transform.SetParent(P);
-        Debug.Log(_standard);
-        
+
         grabSphericalMapLeap = GetComponent<InteractionBehaviour>();
         grabSphericalMapLeap.OnGraspBegin += GrabSphereGraspBegin;
         grabSphericalMapLeap.OnGraspStay += GrabSphereGraspStay;
         grabSphericalMapLeap.OnGraspEnd += GrabSphereGraspedEnd;
 
         grabSphereMaterial = sphericalMap.GetComponent<MeshRenderer>().material;
-
-
     }
 
     private void GrabSphereGraspBegin() 
@@ -51,7 +48,7 @@ public class InteractionSphericalMap : MonoBehaviour
         {
             //initialGrabOffset = grabHand.GetGraspPoint() - grabSphere.transform.position;
             initialGrabOffset = grabHand.GetGraspPoint() - _standard;
-            grabSphereMaterial.DOColor(GrabSphereGrabbedColor, 0.1f);
+            //grabSphereMaterial.DOColor(GrabSphereGrabbedColor, 0.1f);
         }
     }
 
@@ -59,7 +56,7 @@ public class InteractionSphericalMap : MonoBehaviour
     {
         Debug.Log("GrabSphereGraspedEnd");
         grabHand = null;
-        grabSphereMaterial.DOColor(GrabSphereDefaultColor, 0.1f);
+        //grabSphereMaterial.DOColor(GrabSphereDefaultColor, 0.1f);
     }
 
     private void GrabSphereGraspStay() 
