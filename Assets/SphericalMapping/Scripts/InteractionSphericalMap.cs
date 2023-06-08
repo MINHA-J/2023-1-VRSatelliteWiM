@@ -8,6 +8,7 @@ using UnityEngine.Serialization;
 [RequireComponent(typeof(InteractionBehaviour))]
 public class InteractionSphericalMap : MonoBehaviour
 {
+    [SerializeField] private float velocity = 15.0f;
     private GameObject cam;
     private GameObject sphericalMap;
 
@@ -15,6 +16,7 @@ public class InteractionSphericalMap : MonoBehaviour
     private InteractionHand grabHand;
     private Vector3 initialGrabOffset;
     private Material grabSphereMaterial;
+    private GameObject _standardObj;
     private Vector3 _standard;
     
     private Color GrabSphereDefaultColor = new Color(0.2f, 0.6f, 0.2f, 0.9f);
@@ -25,13 +27,9 @@ public class InteractionSphericalMap : MonoBehaviour
     {
         cam = SphericaiWorld.Instance.cam;
         sphericalMap = SphericaiWorld.Instance.sphericalMap;
-
-        GameObject s = GameObject.Find("standard");
-        Transform P = s.transform.parent;
-        s.transform.SetParent(null);
-        _standard = s.transform.position;
-        s.transform.SetParent(P);
-
+    
+        _standardObj = GameObject.Find("standard");
+        
         grabSphericalMapLeap = GetComponent<InteractionBehaviour>();
         grabSphericalMapLeap.OnGraspBegin += GrabSphereGraspBegin;
         grabSphericalMapLeap.OnGraspStay += GrabSphereGraspStay;
@@ -40,6 +38,14 @@ public class InteractionSphericalMap : MonoBehaviour
         grabSphereMaterial = sphericalMap.GetComponent<MeshRenderer>().material;
     }
 
+    private void updateStandardPos()
+    {
+        Transform P = _standardObj.transform.parent;
+        _standardObj.transform.SetParent(null);
+        _standard = _standardObj.transform.position;
+        _standardObj.transform.SetParent(P);
+    }
+    
     private void GrabSphereGraspBegin() 
     {
         Debug.Log("GrabSphereGraspBegin");
@@ -59,45 +65,33 @@ public class InteractionSphericalMap : MonoBehaviour
         //grabSphereMaterial.DOColor(GrabSphereDefaultColor, 0.1f);
     }
 
-    private void GrabSphereGraspStay() 
+    private void GrabSphereGraspStay()
     {
         //if (grabHand.isLeft)
-        {
-            TranslateSphericalMap();
-            //ScaleMarkedSpace();
-        }
-        // else if (grabHand == rightHand.Leap)
-        // {
-        //     TranslateMarkedSpace();
-        // }
+        updateStandardPos();
+        TranslateSphericalMap();
+        //ScaleMarkedSpace();
     }
 
     public void ScaleSphericalMap()
     {
-        // Scale은 Move이후에 진행
+        // TODO: Scale은 Move이후에 진행
     }
     
     public void TranslateSphericalMap()
     {
         var grabPos = grabHand.GetGraspPoint();
-        Debug.DrawLine(grabPos, _standard, Color.green, 3.0f);
-
+        //Debug.DrawLine(grabPos, _standard, Color.green, 3.0f);
         var delta = grabPos - _standard;
-        var vel = 0.1f; // 너무 빠르게 돌지 않도록
-        
-        //delta /= mark.Radius;
-        //delta.x = Mathf.Sign(delta.x) * CoolMath.SmoothStep(0.1f, 0.2f, delta.x);
-        delta.x = Mathf.Sign(delta.x) * CoolMath.SmoothStep(0.1f, 0.2f, Mathf.Abs(delta.x));
-        //delta.x = Mathf.Sign(delta.z) * CoolMath.SmoothStep(0.1f, 0.2f, Mathf.Abs(delta.z));
-        
-        delta.y = 0.0f; //delta.y = Mathf.Sign(delta.y) * CoolMath.SmoothStep(0.1f, 0.2f, Mathf.Abs(delta.y));
-        //delta.z = Mathf.Sign(delta.z) * CoolMath.SmoothStep(0.1f, 0.2f, delta.z);
-        delta.z = Mathf.Sign(delta.z) * CoolMath.SmoothStep(0.1f, 0.2f, delta.z);
-        //delta.z = Mathf.Sign(delta.x) * CoolMath.SmoothStep(0.1f, 0.2f, Mathf.Abs(delta.x));
 
-        Debug.Log("Standard" + _standard + ", grabPos:" + grabPos + ", delta:" + delta);
-        //delta = Time.deltaTime * delta * mark.Radius;
-        cam.transform.position += delta * delta.sqrMagnitude * vel;
+        // Camera를 이동하여, Spherical이 회전하는 것처럼 구현
+        Vector3 GrabToCam = new Vector3(
+            delta.x * CoolMath.SmoothStep(0.1f, 0.2f, Mathf.Abs(delta.x)),
+            0.0f,
+            delta.y * CoolMath.SmoothStep(0.1f, 0.2f, Mathf.Abs(delta.y))
+        );
+        
+        cam.transform.position += GrabToCam * (GrabToCam.sqrMagnitude * velocity);
     }
 
     // Update is called once per frame
