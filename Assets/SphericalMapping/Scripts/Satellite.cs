@@ -74,7 +74,7 @@ public class Satellite : MonoBehaviour
         _lastPos = _curPos;
 
         //Debug.Log(this.transform.localPosition.magnitude * 10000);
-        if (this.transform.localPosition.magnitude * 10000 > 20000)
+        if (this.transform.localPosition.magnitude * 10000 > 15000)
         {
             SphericaiWorld.Instance.RemoveSatellite(index);
         }

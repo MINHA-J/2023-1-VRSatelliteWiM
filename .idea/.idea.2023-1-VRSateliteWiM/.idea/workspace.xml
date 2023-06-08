@@ -6,27 +6,23 @@
   <component name="ChangeListManager">
     <list default="true" id="27871435-4791-48d4-8bd2-395091101b6b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.2023-1-VRSateliteWiM/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.2023-1-VRSateliteWiM/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SphericalMapping/Scripts/InteractionSphericalMap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SphericalMapping/Scripts/InteractionSphericalMap.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/TransparentLit.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/TransparentLit.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/7-SatelliteScene 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/7-SatelliteScene 1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CameraController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SphericalMapping/Prefabs/checkRoiPin.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SphericalMapping/Prefabs/checkRoiPin.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SphericalMapping/Scripts/Satellite.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SphericalMapping/Scripts/Satellite.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SphericalMapping/Scripts/SphericalWorldPin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SphericalMapping/Scripts/SphericalWorldPin.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ThirdParty/Ultraleap/Tracking/Examples/Example Assets/3D Interaction/Materials/Green Dark Standard.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ThirdParty/Ultraleap/Tracking/Examples/Example Assets/3D Interaction/Materials/Green Dark Standard.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/ThirdParty/Ultraleap/Tracking/Examples/Example Assets/3D Interaction/Materials/Grey Transparent Standard.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ThirdParty/Ultraleap/Tracking/Examples/Example Assets/3D Interaction/Materials/Grey Transparent Standard.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ThirdParty/Ultraleap/Tracking/Examples/Example Assets/Common Example Assets/Materials/IE Example Anchor Blue.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ThirdParty/Ultraleap/Tracking/Examples/Example Assets/Common Example Assets/Materials/IE Example Anchor Blue.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ThirdParty/Ultraleap/Tracking/Examples/Example Assets/Common Example Assets/Materials/IE Example Anchor Magenta.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ThirdParty/Ultraleap/Tracking/Examples/Example Assets/Common Example Assets/Materials/IE Example Anchor Magenta.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ThirdParty/Ultraleap/Tracking/Examples/Example Assets/Common Example Assets/Materials/IE Example Anchor Red.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ThirdParty/Ultraleap/Tracking/Examples/Example Assets/Common Example Assets/Materials/IE Example Anchor Red.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ThirdParty/Ultraleap/Tracking/Examples/Example Assets/Common Example Assets/Materials/IE Example Black Matte.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ThirdParty/Ultraleap/Tracking/Examples/Example Assets/Common Example Assets/Materials/IE Example Black Matte.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ThirdParty/Ultraleap/Tracking/Examples/Example Assets/Common Example Assets/Materials/IE Example Light Gray Matte.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ThirdParty/Ultraleap/Tracking/Examples/Example Assets/Common Example Assets/Materials/IE Example Light Gray Matte.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ThirdParty/Ultraleap/Tracking/Examples/Example Assets/3D Interaction/Materials/Red Dark Standard.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ThirdParty/Ultraleap/Tracking/Examples/Example Assets/3D Interaction/Materials/Red Dark Standard.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ThirdParty/Ultraleap/Tracking/Examples/Example Assets/3D Interaction/Materials/Red Standard.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ThirdParty/Ultraleap/Tracking/Examples/Example Assets/3D Interaction/Materials/Red Standard.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ThirdParty/Ultraleap/Tracking/Examples/Example Assets/3D Interaction/Turntable And Pullcord/Materials/TurntableLine.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ThirdParty/Ultraleap/Tracking/Examples/Example Assets/3D Interaction/Turntable And Pullcord/Materials/TurntableLine.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/ThirdParty/Ultraleap/Tracking/Examples/Example Assets/Common Example Assets/Materials/IE Example Prism Blue Inner.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ThirdParty/Ultraleap/Tracking/Examples/Example Assets/Common Example Assets/Materials/IE Example Prism Blue Inner.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/ThirdParty/Ultraleap/Tracking/Examples/Example Assets/Common Example Assets/Materials/IE Example Prism Blue.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ThirdParty/Ultraleap/Tracking/Examples/Example Assets/Common Example Assets/Materials/IE Example Prism Blue.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/ThirdParty/Ultraleap/Tracking/Examples/Example Assets/Common Example Assets/Materials/IE Example Prism Magenta Inner.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ThirdParty/Ultraleap/Tracking/Examples/Example Assets/Common Example Assets/Materials/IE Example Prism Magenta Inner.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/ThirdParty/Ultraleap/Tracking/Examples/Example Assets/Common Example Assets/Materials/IE Example Prism Magenta.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ThirdParty/Ultraleap/Tracking/Examples/Example Assets/Common Example Assets/Materials/IE Example Prism Magenta.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/ThirdParty/Ultraleap/Tracking/Examples/Example Assets/Common Example Assets/Materials/IE Example Prism Red Inner.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ThirdParty/Ultraleap/Tracking/Examples/Example Assets/Common Example Assets/Materials/IE Example Prism Red Inner.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/ThirdParty/Ultraleap/Tracking/Examples/Example Assets/Common Example Assets/Materials/IE Example Prism Red.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ThirdParty/Ultraleap/Tracking/Examples/Example Assets/Common Example Assets/Materials/IE Example Prism Red.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ThirdParty/Ultraleap/Tracking/Examples/Example Assets/Menus &amp; UI/Materials/IE Example Button Blue.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ThirdParty/Ultraleap/Tracking/Examples/Example Assets/Menus &amp; UI/Materials/IE Example Button Blue.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ThirdParty/Ultraleap/Tracking/Examples/Example Assets/Menus &amp; UI/Materials/IE Example Button Magenta.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ThirdParty/Ultraleap/Tracking/Examples/Example Assets/Menus &amp; UI/Materials/IE Example Button Magenta.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ThirdParty/Ultraleap/Tracking/Examples/Example Assets/Menus &amp; UI/Materials/IE Example Button Panel.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ThirdParty/Ultraleap/Tracking/Examples/Example Assets/Menus &amp; UI/Materials/IE Example Button Panel.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ThirdParty/Ultraleap/Tracking/Examples/Example Assets/Menus &amp; UI/Materials/IE Example Button Top Blue.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ThirdParty/Ultraleap/Tracking/Examples/Example Assets/Menus &amp; UI/Materials/IE Example Button Top Blue.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ThirdParty/Ultraleap/Tracking/Examples/Example Assets/Menus &amp; UI/Materials/IE Example Button Top Red.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ThirdParty/Ultraleap/Tracking/Examples/Example Assets/Menus &amp; UI/Materials/IE Example Button Top Red.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ThirdParty/Ultraleap/Tracking/Examples/Example Assets/Menus &amp; UI/Materials/IE Example Panel Blue.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ThirdParty/Ultraleap/Tracking/Examples/Example Assets/Menus &amp; UI/Materials/IE Example Panel Blue.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ThirdParty/Ultraleap/Tracking/Examples/Example Assets/Menus &amp; UI/Materials/IE Example Panel Magenta.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ThirdParty/Ultraleap/Tracking/Examples/Example Assets/Menus &amp; UI/Materials/IE Example Panel Magenta.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ThirdParty/Ultraleap/Tracking/Examples/Example Assets/Menus &amp; UI/Materials/IE Example Panel Red.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ThirdParty/Ultraleap/Tracking/Examples/Example Assets/Menus &amp; UI/Materials/IE Example Panel Red.mat" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +46,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5ddb5fa70dfe40d2818192400111b9ec2aa00/90/c052e128/DOTween.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/SphericalMapping/RenderCubemapWizard.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/SphericalMapping/RenderTextureSphere.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/SphericalMapping/Scripts/MakeRoi.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/SphericalMapping/Scripts/SphericalWorldPin.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Stuff/FaceCamera.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Warps/Clipping/ClipSphereRenderFeature.cs" root0="FORCE_HIGHLIGHTING" />
@@ -58,7 +55,7 @@
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.6.6/Tests/Runtime/Shared/TestCompilerAttributeBase.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.6.6/Tests/Runtime/Unity.Burst.Tests/TestCompilerAttribute.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.4.4/InputSystem/Controls/InputControlList.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.4.4/InputSystem/Devices/Commands/SetIMECursorPositionCommand.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.4.4/InputSystem/Devices/Commands/SetIMECursorPositionCommand.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.4.4/InputSystem/Devices/Sensor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.4.4/InputSystem/Editor/Settings/InputSettingsProvider.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.4.4/Samples~/Visualizers/InputVisualizer.cs" root0="SKIP_HIGHLIGHTING" />
@@ -78,14 +75,14 @@
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.searcher@4.9.1/Tests/Editor/SearcherTests.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.shadergraph@12.1.7/Editor/Data/Graphs/SerializableMesh.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.shadergraph@12.1.7/Editor/Drawing/MaterialGraphEditWindow.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.6.4/Editor/Animation/CurveDataSource.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.6.4/Editor/Animation/CurvesProxy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.6.4/Editor/Animation/CurveDataSource.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.6.4/Editor/Animation/CurvesProxy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.6.4/Editor/Shortcuts.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/DefaultControls.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ScrollRect.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Tests/Runtime/Canvas/CheckMeshColorsAndColors32Match.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.visualeffectgraph@12.1.7/Runtime/Utilities/PropertyBinding/VFXPropertyBinder.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.legacyinputhelpers@2.1.10/Runtime/CameraOffset.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.legacyinputhelpers@2.1.10/Runtime/CameraOffset.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.oculus@3.0.2/Runtime/OculusLoader.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Test/VivePortals/Assets/Warps/MarkManipulation/MarkManipulation.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -198,7 +195,7 @@
       <workItem from="1686064466644" duration="1225000" />
       <workItem from="1686128461676" duration="1191000" />
       <workItem from="1686129915643" duration="30233000" />
-      <workItem from="1686220564314" duration="3752000" />
+      <workItem from="1686220564314" duration="12737000" />
     </task>
     <servers />
   </component>
