@@ -44,7 +44,9 @@ public class SphericalWorldPin : MonoBehaviour
             transform.SetParent(other.transform); // Trigger된 오브젝트의 자식으로 놔둠.
             
             Vector3 localPos = this.transform.localPosition;
-            other.GetComponent<TransformCoord>().SetROI(localPos);
+            bool canDo = other.GetComponent<TransformCoord>().SetROI(localPos);
+            if (!canDo)
+                Debug.Log("Proxy를 배치하지 못했음");
         }
     }
     
