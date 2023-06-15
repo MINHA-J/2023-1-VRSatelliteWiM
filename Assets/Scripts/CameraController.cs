@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-	public float range = 100.0f;
+	public float range = 80.0f;
 
 	
 	// Use this for initialization

@@ -64,7 +64,10 @@ public class TransformCoord : MonoBehaviour
             return false;
         
         SphericaiWorld.Instance.CreateProxies(index, localToWorld, 100.0f, spawnPos.position);
+        //SphericaiWorld.Instance.CreateProxies(index, localToWorld, 100.0f, localVec);
         SphericaiWorld.Instance.CreateSatellite(index, localVec);
+        
+       
         //SphericaiWorld.Instance.CreateProxies(index, localToWorld, 100.0f, spawnPos.position);
         index++;
         

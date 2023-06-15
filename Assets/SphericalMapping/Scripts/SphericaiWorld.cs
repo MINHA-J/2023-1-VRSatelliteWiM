@@ -90,6 +90,7 @@ public class SphericaiWorld : MonoBehaviour
     
     public void CreateProxies(uint index, Vector3 M_pos, float size, Vector3 P_pos)
     {
+        //GameObject EntryWarp = Resources.Load("Prefabs/ProxyNode_fix", typeof(GameObject)) as GameObject;
         GameObject EntryWarp = Resources.Load("Prefabs/ProxyNode", typeof(GameObject)) as GameObject;
         GameObject ExitWarp = Resources.Load("Prefabs/MarkNode", typeof(GameObject)) as GameObject;
         
@@ -108,8 +109,8 @@ public class SphericaiWorld : MonoBehaviour
         markPosFilter.Filter(M_pos);
         proxyPosFilter.Filter(P_pos);
 
-        proxyFilteredSize = proxyScaleFilter.Filter(1.0f);
-        markFilteredScale = markScaleFilter.Filter(3.0f);
+        proxyFilteredSize = proxyScaleFilter.Filter(0.5f);
+        markFilteredScale = markScaleFilter.Filter(1.0f);
 
 
         markedSpace.transform.position = M_pos;

@@ -70,11 +70,11 @@ public class Satellite : MonoBehaviour
             ScaleMarkedSpace((_curPos.z - _lastPos.z) * 150);
 
         if ((Math.Abs(_curPos.x - _lastPos.x) > 0.005f) || (Math.Abs(_curPos.y - _lastPos.y) > 0.005f))
-            //TranslateMarkedSpace((_curPos - _lastPos) * 300);
+            TranslateMarkedSpace((_curPos - _lastPos) * 150);
         _lastPos = _curPos;
 
         //Debug.Log(this.transform.localPosition.magnitude * 10000);
-        if (this.transform.localPosition.magnitude * 10000 > 20000)
+        if (this.transform.localPosition.magnitude * 10000 > 15000)
         {
             SphericaiWorld.Instance.RemoveSatellite(index);
         }
