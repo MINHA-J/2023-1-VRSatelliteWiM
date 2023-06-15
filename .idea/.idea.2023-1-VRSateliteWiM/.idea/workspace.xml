@@ -6,23 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="27871435-4791-48d4-8bd2-395091101b6b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.2023-1-VRSateliteWiM/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.2023-1-VRSateliteWiM/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/TransparentLit.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/TransparentLit.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/MarkNode.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/MarkNode.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/7-SatelliteScene 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/7-SatelliteScene 1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CameraController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SphericalMapping/Prefabs/checkRoiPin.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SphericalMapping/Prefabs/checkRoiPin.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SphericalMapping/Scripts/MakeRoi.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SphericalMapping/Scripts/MakeRoi.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/SphericalMapping/Scripts/Satellite.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SphericalMapping/Scripts/Satellite.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SphericalMapping/Scripts/SphericalWorldPin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SphericalMapping/Scripts/SphericalWorldPin.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ThirdParty/Ultraleap/Tracking/Examples/Example Assets/3D Interaction/Materials/Green Dark Standard.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ThirdParty/Ultraleap/Tracking/Examples/Example Assets/3D Interaction/Materials/Green Dark Standard.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ThirdParty/Ultraleap/Tracking/Examples/Example Assets/3D Interaction/Materials/Grey Transparent Standard.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ThirdParty/Ultraleap/Tracking/Examples/Example Assets/3D Interaction/Materials/Grey Transparent Standard.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ThirdParty/Ultraleap/Tracking/Examples/Example Assets/3D Interaction/Materials/Red Dark Standard.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ThirdParty/Ultraleap/Tracking/Examples/Example Assets/3D Interaction/Materials/Red Dark Standard.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ThirdParty/Ultraleap/Tracking/Examples/Example Assets/3D Interaction/Materials/Red Standard.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ThirdParty/Ultraleap/Tracking/Examples/Example Assets/3D Interaction/Materials/Red Standard.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ThirdParty/Ultraleap/Tracking/Examples/Example Assets/3D Interaction/Turntable And Pullcord/Materials/TurntableLine.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ThirdParty/Ultraleap/Tracking/Examples/Example Assets/3D Interaction/Turntable And Pullcord/Materials/TurntableLine.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ThirdParty/Ultraleap/Tracking/Examples/Example Assets/Common Example Assets/Materials/IE Example Prism Blue Inner.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ThirdParty/Ultraleap/Tracking/Examples/Example Assets/Common Example Assets/Materials/IE Example Prism Blue Inner.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ThirdParty/Ultraleap/Tracking/Examples/Example Assets/Common Example Assets/Materials/IE Example Prism Blue.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ThirdParty/Ultraleap/Tracking/Examples/Example Assets/Common Example Assets/Materials/IE Example Prism Blue.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ThirdParty/Ultraleap/Tracking/Examples/Example Assets/Common Example Assets/Materials/IE Example Prism Magenta Inner.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ThirdParty/Ultraleap/Tracking/Examples/Example Assets/Common Example Assets/Materials/IE Example Prism Magenta Inner.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ThirdParty/Ultraleap/Tracking/Examples/Example Assets/Common Example Assets/Materials/IE Example Prism Magenta.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ThirdParty/Ultraleap/Tracking/Examples/Example Assets/Common Example Assets/Materials/IE Example Prism Magenta.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ThirdParty/Ultraleap/Tracking/Examples/Example Assets/Common Example Assets/Materials/IE Example Prism Red Inner.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ThirdParty/Ultraleap/Tracking/Examples/Example Assets/Common Example Assets/Materials/IE Example Prism Red Inner.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ThirdParty/Ultraleap/Tracking/Examples/Example Assets/Common Example Assets/Materials/IE Example Prism Red.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ThirdParty/Ultraleap/Tracking/Examples/Example Assets/Common Example Assets/Materials/IE Example Prism Red.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SphericalMapping/Scripts/SphericaiWorld.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SphericalMapping/Scripts/SphericaiWorld.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SphericalMapping/Scripts/TransformCoord.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SphericalMapping/Scripts/TransformCoord.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Warps/Manipulation/Manipulation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Warps/Manipulation/Manipulation.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,7 +185,9 @@
       <workItem from="1686064466644" duration="1225000" />
       <workItem from="1686128461676" duration="1191000" />
       <workItem from="1686129915643" duration="30233000" />
-      <workItem from="1686220564314" duration="12737000" />
+      <workItem from="1686220564314" duration="13178000" />
+      <workItem from="1686660118130" duration="6555000" />
+      <workItem from="1686814619006" duration="2200000" />
     </task>
     <servers />
   </component>

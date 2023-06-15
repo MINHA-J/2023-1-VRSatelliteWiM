@@ -148,7 +148,7 @@ public class Manipulation : MonoBehaviour {
             // Don't allow going from Translating into anchoring
             if(Mode == ManipulationMode.Translating) hasHoverHand = false;
             // Have slight delay on anchoring start as not to trigger it on rotation/scaling
-            if(hasHoverHand && hoverTime > 0.2f) {
+            if(hasHoverHand && hoverTime > 1.5f) { //* FIX
                 anchorHand = leap.graspingController.intHand;
                 anchoringStart = anchorHand.isGraspingObject ? anchorHand.GetGraspPoint() : anchorHand.position;
                 anchoringStopTimer = 0f;

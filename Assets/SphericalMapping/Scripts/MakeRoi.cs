@@ -22,7 +22,7 @@ public class MakeRoi : MonoBehaviour
     [SerializeField]private const float headAngleThreashold = 60f;
 
     private float timer  = 0.0f;
-    private float duration  = 1.5f;
+    private float duration  = 2.0f;
 
     private void Update()
     {
