@@ -17,7 +17,8 @@ public class Player : SingletonMonoBehaviour<Player> {
     public InteractionHand InteractionHandLeft;
     public InteractionHand InteractionHandRight;
 
-    public PlayerProxyStorage ProxyStorage;
+    //public PlayerProxyStorage ProxyStorage;
+    public SphericalMapProxyStorage ProxyStorage;
     public GameObject AnchoringTarget;
 
     private LeapProvider activeProvider;

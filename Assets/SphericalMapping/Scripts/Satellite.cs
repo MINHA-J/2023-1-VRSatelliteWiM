@@ -13,6 +13,7 @@ public class Satellite : MonoBehaviour
     [SerializeField] private Color color;
 
     private Vector3 _curPos, _lastPos;
+    private float vel = 2.0f;
 
     private void Awake()
     {
@@ -43,7 +44,7 @@ public class Satellite : MonoBehaviour
 
         //Debug.Log(delta);
         //delta = Mathf.Sign(delta) * CoolMath.SmoothStep(0.05f, 0.3f, delta);
-        delta = Time.deltaTime * delta * mark.Radius; 
+        delta = Time.deltaTime * delta * mark.Radius * vel; 
         mark.transform.localScale -= new Vector3(delta, delta, delta);
         mark.transform.localScale.Clamp(SphericaiWorld.MinMarkSize, SphericaiWorld.MaxMarkSize);
     }
@@ -51,27 +52,35 @@ public class Satellite : MonoBehaviour
     private void TranslateMarkedSpace(Vector3 delta) 
     {
         //delta = grabPos - grabSphere.transform.position;
-        delta /= mark.Radius;
+        //delta /= mark.Radius;
         //delta.x = Mathf.Sign(delta.x) * CoolMath.SmoothStep(0.1f, 0.2f, Mathf.Abs(delta.x));
+        //delta.x *= 1;
         delta.z = delta.y;
         delta.y = 0.0f;
-        delta = Time.deltaTime * delta * mark.Radius * (1 / _curPos.y);
+        delta = delta * vel * (Time.deltaTime * mark.Radius * (1 / _curPos.y));
         mark.transform.position += delta;
     }
-    
+
     private void Update()
     {
         // 언제나 Spherical WorldMap을 향함
         this.transform.LookAt(SphericaiWorld.Instance.transform);
-        
+
         _curPos = transform.localPosition;
         //Debug.Log(Math.Abs(_curPos.z - _lastPos.z));
         if (Math.Abs(_curPos.z - _lastPos.z) > 0.005f)
+        {
             ScaleMarkedSpace((_curPos.z - _lastPos.z) * 150);
+            _lastPos = _curPos;
+        }
 
-        if ((Math.Abs(_curPos.x - _lastPos.x) > 0.005f) || (Math.Abs(_curPos.y - _lastPos.y) > 0.005f))
+        if ((Math.Abs(_curPos.x - _lastPos.x) >0.005f) || (Math.Abs(_curPos.y - _lastPos.y) > 0.005f))
+        {
+            Debug.Log(_curPos.x - _lastPos.x);
+            Debug.Log(_curPos.y - _lastPos.y);
             TranslateMarkedSpace((_curPos - _lastPos) * 150);
-        _lastPos = _curPos;
+            _lastPos = _curPos;
+        }
 
         //Debug.Log(this.transform.localPosition.magnitude * 10000);
         if (this.transform.localPosition.magnitude * 10000 > 15000)

@@ -13,12 +13,12 @@ public class CameraController : MonoBehaviour
 		
 	}
 
-    private void CamRangeCheck()
+    public bool CamRangeCheck()
     {
 	    // x, z축의 범위를 벗어난다면
 	    Vector2 dis = new Vector2(this.transform.position.x, this.transform.position.z);
 	    //Debug.Log(dis.sqrMagnitude);
-	    if (range * range < dis.sqrMagnitude)
+	    if (range * range <= dis.sqrMagnitude)
 	    {
 		    Vector3 newPos = new Vector3(-this.transform.position.x,
 			    this.transform.position.y,
@@ -26,7 +26,11 @@ public class CameraController : MonoBehaviour
 		    
 		    this.transform.position = newPos;
 		    //Debug.Log("Camera Pos Change");
+
+		    return false;
 	    }
+
+	    return true;
     }
     
 	// Update is called once per frame

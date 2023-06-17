@@ -90,8 +90,8 @@ public class InteractionSphericalMap : MonoBehaviour
             0.0f,
             delta.y * CoolMath.SmoothStep(0.1f, 0.2f, Mathf.Abs(delta.y))
         );
-        
-        cam.transform.position += GrabToCam * (GrabToCam.sqrMagnitude * velocity);
+
+        cam.transform.position += GrabToCam * (GrabToCam.sqrMagnitude * velocity) * -1.0f;
     }
 
     // Update is called once per frame

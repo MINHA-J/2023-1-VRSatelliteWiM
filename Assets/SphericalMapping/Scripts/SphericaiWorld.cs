@@ -26,7 +26,7 @@ public class SphericaiWorld : MonoBehaviour
     OneEuroFilter<Vector3> proxyPosFilter = new OneEuroFilter<Vector3>(30.0f, 0.3f);
     OneEuroFilter markScaleFilter = new OneEuroFilter(30.0f);
     OneEuroFilter proxyScaleFilter = new OneEuroFilter(30.0f);
-
+    private const float MINIMIZE_THRESHOLD = 0.05f;
     
     #region SphericaiWorld Singleton 
     private static SphericaiWorld instance;
@@ -77,7 +77,7 @@ public class SphericaiWorld : MonoBehaviour
     {
         //.GetComponent<Satellite>();
         GameObject instance = Instantiate(prefabSatellite);
-        instance.transform.position = this.transform.position + (pos * 0.7f);
+        instance.transform.position = this.transform.position + (pos * 0.6f);
         instance.transform.LookAt(this.transform);
         instance.transform.SetParent(satellites.transform);
         //instance.
@@ -110,7 +110,7 @@ public class SphericaiWorld : MonoBehaviour
         proxyPosFilter.Filter(P_pos);
 
         proxyFilteredSize = proxyScaleFilter.Filter(0.5f);
-        markFilteredScale = markScaleFilter.Filter(1.0f);
+        markFilteredScale = markScaleFilter.Filter(2.0f);
 
 
         markedSpace.transform.position = M_pos;
@@ -122,6 +122,9 @@ public class SphericaiWorld : MonoBehaviour
         proxyNode.SetCreationMode(false);
         
         ProxiesTable.Add(index, proxyNode);
+
+        proxyNode.Minimize();
+        //proxySpace.transform.localScale = new Vector3(MINIMIZE_THRESHOLD - 0.01f, MINIMIZE_THRESHOLD - 0.01f, MINIMIZE_THRESHOLD - 0.01f);
     }
 
     public bool CanDeployProxies(Vector3 tempPos, float range)

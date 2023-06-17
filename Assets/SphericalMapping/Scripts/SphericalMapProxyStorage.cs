@@ -1,13 +1,15 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 
-public class PlayerProxyStorage : MonoBehaviour
+
+public class SphericalMapProxyStorage : MonoBehaviour
 {
-    private List<ProxyNode> proxies;
+private List<ProxyNode> proxies;
     private int maxProxies;
     private bool isShown;
+    private GameObject _standardObj;
 
     private const float upAngleThreashold = 60f;
     private const float headAngleThreashold = 60f;
@@ -20,21 +22,24 @@ public class PlayerProxyStorage : MonoBehaviour
     {
         proxies = new List<ProxyNode>();
         maxProxies = transform.childCount;
+        _standardObj = GameObject.Find("standard");
     }
 
-    private void Update() {
-        transform.position = Player.Instance.InteractionHandLeft.position;
-        transform.rotation = Player.Instance.InteractionHandLeft.rotation;
+    private void Update() 
+    {
+        transform.position = _standardObj.transform.position;
+        //transform.rotation = Player.Instance.InteractionHandLeft.rotation;
         float upAngle = Vector3.Angle(transform.forward, Vector3.up);
         float headAngle = Vector3.Angle(transform.up, Player.Instance.MainCamera.transform.forward);
-        if(upAngle < upAngleThreashold && headAngle < headAngleThreashold) {
-            Show();
-        } else {
-            Hide();
-        }
+        // if(upAngle < upAngleThreashold && headAngle < headAngleThreashold) {
+        //     Show();
+        // } else {
+        //     Hide();
+        // }
     }
 
-    public void Add(ProxyNode proxy) {
+    public void Add(ProxyNode proxy) 
+    {
         if (proxies.Count == maxProxies) proxies.RemoveAt(0);
         proxies.Add(proxy);
 
@@ -44,7 +49,8 @@ public class PlayerProxyStorage : MonoBehaviour
         proxy.transform.localPosition = Vector3.zero;
     }
 
-    public void Remove(ProxyNode proxy) {
+    public void Remove(ProxyNode proxy) 
+    {
         proxy.transform.SetParent(null, true); // Parent to scene's top
         order = proxies.IndexOf(proxy); // reorder the proxies next time they are shown
         proxies.Remove(proxy);

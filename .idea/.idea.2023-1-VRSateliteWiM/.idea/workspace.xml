@@ -6,13 +6,19 @@
   <component name="ChangeListManager">
     <list default="true" id="27871435-4791-48d4-8bd2-395091101b6b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.2023-1-VRSateliteWiM/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.2023-1-VRSateliteWiM/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/MarkNode.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/MarkNode.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/7-SatelliteScene 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/7-SatelliteScene 1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SphericalMapping/Scripts/MakeRoi.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SphericalMapping/Scripts/MakeRoi.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player/PlayerProxyStorage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/PlayerProxyStorage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/1-SampleSceneSetting.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/1-SampleSceneSetting.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Test02.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Test02.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CameraController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SphericalMapping/Scripts/InteractionSphericalMap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SphericalMapping/Scripts/InteractionSphericalMap.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/SphericalMapping/Scripts/Satellite.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SphericalMapping/Scripts/Satellite.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/SphericalMapping/Scripts/SphericaiWorld.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SphericalMapping/Scripts/SphericaiWorld.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SphericalMapping/Scripts/SphericalWorldPin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SphericalMapping/Scripts/SphericalWorldPin.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/SphericalMapping/Scripts/TransformCoord.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SphericalMapping/Scripts/TransformCoord.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Warps/Manipulation/Manipulation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Warps/Manipulation/Manipulation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Warps/ProxyNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Warps/ProxyNode.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,7 +193,8 @@
       <workItem from="1686129915643" duration="30233000" />
       <workItem from="1686220564314" duration="13178000" />
       <workItem from="1686660118130" duration="6555000" />
-      <workItem from="1686814619006" duration="2200000" />
+      <workItem from="1686814619006" duration="16206000" />
+      <workItem from="1686837996139" duration="1884000" />
     </task>
     <servers />
   </component>

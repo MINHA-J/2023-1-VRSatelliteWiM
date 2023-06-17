@@ -140,7 +140,14 @@ public class Manipulation : MonoBehaviour {
             if(inactiveTime > InactiveTimeout) {
                 ChangeMode(ManipulationMode.Hover);
                 graspedPoseHandler.SetEnabled(false);
-            } else {
+            }
+            else if (proxyNode.Radius < MINIMIZE_THRESHOLD)
+            {
+                graspedPoseHandler.SetEnabled(false);
+                proxyNode.Minimize();
+                ChangeMode(ManipulationMode.Minimized);
+            }
+            else {
                 ChangeMode(ManipulationMode.Active);
             }
         } else if(graspedPoseHandler.InteractingHands == 1) {

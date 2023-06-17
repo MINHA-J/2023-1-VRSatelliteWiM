@@ -36,7 +36,8 @@ public class ProxyNode : WarpNode, IPinchable
     private VisualEffect vfxGraph;
 
     public ProxyState State { get; private set; }
-    private float originalSize;
+    private ProxyState _preState;
+    private float originalSize = 0.6f;
     public float ProxyScaleFactor { get; private set; }
 
     public bool HeadEntered { get; private set; }
@@ -184,6 +185,7 @@ public class ProxyNode : WarpNode, IPinchable
     {
         var pos = hand.leapHand.GetPinchPosition();
         pinchStart = pos;
+        _preState = State;
         State = ProxyState.Pinched;
         sphere.PinchPosition = pos;
         sphere.ChangeHandOpening(0f, 0.1f);
@@ -194,53 +196,60 @@ public class ProxyNode : WarpNode, IPinchable
         var pos = hand.leapHand.GetPinchPosition();
         sphere.PinchPosition = pos;
 
-        if (proxyMenu == null)
-        {
-            var pinchDirection = pos - pinchStart;
-            var pinchDistance = pinchDirection.magnitude;
-            if (pinchDistance > menuActivateThreshold)
-            {
-                var menuPosition = pos + pinchDirection.normalized * menuLocationOffset;
-                var menuOrientation = Quaternion.LookRotation(pinchDirection);
-                proxyMenu = Instantiate<CrossingMenu>(ProxyMenuPrefab, menuPosition, menuOrientation);
-                proxyMenu.SetOwner(this);
-            }
-        }
+        // if (proxyMenu == null)
+        // {
+        //     var pinchDirection = pos - pinchStart;
+        //     var pinchDistance = pinchDirection.magnitude;
+        //     if (pinchDistance > menuActivateThreshold)
+        //     {
+        //         var menuPosition = pos + pinchDirection.normalized * menuLocationOffset;
+        //         var menuOrientation = Quaternion.LookRotation(pinchDirection);
+        //         proxyMenu = Instantiate<CrossingMenu>(ProxyMenuPrefab, menuPosition, menuOrientation);
+        //         proxyMenu.SetOwner(this);
+        //     }
+        // }
     }
 
     public void EndPinch(InteractionHand hand)
     {
-        if (proxyMenu != null)
-        {
-            switch (proxyMenu.SelectedItem)
-            {
-                case "Clone":
-                    Vector3 offset = Player.Instance.MainCamera.transform.forward * transform.localScale.x * 0.5f;
-                    Clone(sphere.PinchPosition + offset);
-                    break;
-                case "Split":
-                    Vector3 direction = (sphere.PinchPosition - transform.position).normalized;
-                    Split(direction);
-                    break;
-                case "Merge":
-                    Merge(GetNodeAtPosition(sphere.PinchPosition));
-                    break;
-                case "Highlight":
-                    HighlightQuery(GetNodeAtPosition(sphere.PinchPosition));
-                    break;
-                case "AlignToWorld":
-                    AlignToWorld();
-                    break;
-                case "AlignForConvenience":
-                    ConvenienceAlign(GetNodeAtPosition(sphere.PinchPosition));
-                    break;
-                case "AlignToOther":
-                    AlignWith(GetNodeAtPosition(sphere.PinchPosition));
-                    break;
-            }
+        // if (proxyMenu != null)
+        // {
+        //     switch (proxyMenu.SelectedItem)
+        //     {
+        //         case "Clone":
+        //             Vector3 offset = Player.Instance.MainCamera.transform.forward * transform.localScale.x * 0.5f;
+        //             Clone(sphere.PinchPosition + offset);
+        //             break;
+        //         case "Split":
+        //             Vector3 direction = (sphere.PinchPosition - transform.position).normalized;
+        //             Split(direction);
+        //             break;
+        //         case "Merge":
+        //             Merge(GetNodeAtPosition(sphere.PinchPosition));
+        //             break;
+        //         case "Highlight":
+        //             HighlightQuery(GetNodeAtPosition(sphere.PinchPosition));
+        //             break;
+        //         case "AlignToWorld":
+        //             AlignToWorld();
+        //             break;
+        //         case "AlignForConvenience":
+        //             ConvenienceAlign(GetNodeAtPosition(sphere.PinchPosition));
+        //             break;
+        //         case "AlignToOther":
+        //             AlignWith(GetNodeAtPosition(sphere.PinchPosition));
+        //             break;
+        //     }
+        //
+        //     proxyMenu.Close();
+        //     proxyMenu = null;
+        // }
 
-            proxyMenu.Close();
-            proxyMenu = null;
+        Debug.Log("End Pinch");
+        if (_preState == ProxyState.Minimized)
+        {
+            Maximize();
+            _preState = ProxyState.Normal;
         }
 
         sphere.PinchPosition = Vector3.zero;
